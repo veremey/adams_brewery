@@ -1,0 +1,198 @@
+
+.header
+	&__wrap
+		+r(1020)
+			position: absolute
+			top: 0
+			left: 100%
+			right: 0px
+			height: 100vh
+			width: 100vw
+			display: flex
+			flex-direction: column-reverse
+			justify-content: center
+			padding-top: 40px
+			+tr(1s)
+		&.is-active
+			left: 0
+			background-color: rgba(0, 0, 0, .8)
+			z-index: 10
+			.nav
+				left: 0
+
+	&__info
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 10px
+		+r(1020)
+			flex-direction: column-reverse
+			justify-content: center
+			margin-top: auto
+			margin-bottom: 30px
+		.social
+			padding-top: 0
+			margin: 0
+			&__item
+				margin: 0
+				&:hover
+					opacity: .9
+	&__tel
+		color: #fff
+		font-size: 20px
+		line-height: 1.1
+		letter-spacing: 2.5px
+		+sf
+		+r(1020)
+			margin-bottom: 20px
+	&__nav
+		position: relative
+		+r(1020)
+			display: block
+	&__logo
+		width: 300px
+		position: absolute
+		top: 60px
+		left: 50%
+		+trx(-50%)
+		z-index: 10
+		+tr(.4s)
+		+r(1020)
+			top: 20px
+			left: 20px
+			+trx(0%)
+		+r(650)
+			width: 220px
+		+r(400)
+			width: 160px
+		&:hover
+			opacity: .9
+		img
+			max-width: 100%
+
+.nav
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: space-between
+	height: 61px
+	+r(1080)
+		height: 80px
+	+r(1020)
+		display: block
+		height: auto
+		width: 100%
+
+.menu
+	width: calc(50% - 180px)
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 0
+	margin: 0
+	+r(1080)
+		height: 80px
+	+r(1020)
+		display: block
+		width: 100%
+		height: auto
+
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		width: 9000px
+		border-top: 4px solid #F0F0DB
+		border-bottom: 4px solid #F0F0DB
+		pointer-events: none
+		+r(1020)
+			content: none
+	&_left
+		position: absolute
+		top: 0
+		right: calc(50% + 180px)
+		+r(1020)
+			position: relative
+			right: auto
+			left: 0
+		&:before
+			left: auto
+			right: 0
+	&_right
+		position: absolute
+		top: 0
+		left: calc(50% + 180px)
+		+r(1020)
+			position: relative
+			left: 0
+	&__item
+		display: block
+		width: 100%
+		text-align: center
+	&__link
+		display: inline-block
+		vertical-align: top
+		padding: 20px 10px 22px
+		text-transform: uppercase
+		color: #fff
+		font-size: 17px
+		letter-spacing: 2.13px
+		+br
+		font-weight: bold
+		+tr(.4s)
+		&.is-active,
+		&:hover
+			color: #FFC000
+	&__btn
+		display: none
+		position: absolute
+		top: 40px
+		right: 20px
+		width: 40px
+		height: 40px
+		background-color: $n
+		z-index: 20
+		cursor: pointer
+		transition: all 0.3s ease-out
+		+r(1020)
+			display: inline-block
+		+r(650)
+			top: 25px
+		&:after
+			position: relative
+			display: block
+			content: ' '
+			top: 5px
+			width: 40px
+			height: 5px
+			background-color: #fff
+			transition: all 0.3s ease-out
+		&:before
+			position: relative
+			display: block
+			content: ' '
+			bottom: 10px
+			width: 40px
+			height: 5px
+			background-color: #fff
+			transition: all 0.3s ease-out
+		&.is-active:before
+			bottom: -5px
+			transform: rotate(45deg)
+		&.is-active:after
+			top: -5px
+			transform: rotate(-45deg)
+		&.is-active i
+			background-color: $n
+		i
+			position: relative
+			display: block
+			top: 50%
+			width: 40px
+			height: 5px
+			background-color: #fff
+			+try(-50%)
+			transition: all 0.3s ease-out

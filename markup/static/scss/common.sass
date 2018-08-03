@@ -1,0 +1,512 @@
+*
+	box-sizing: border-box
+	outline: none
+	&:after,
+	&:before
+		box-sizing: inherit
+
+html
+	+selection
+		background: rgba(0, 0, 0, .2)
+		color: #fff
+html, body
+	height: 100%
+	background-color: #FFF
+
+body
+	color: #232524
+	font-size: 16px
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	-webkit-text-size-adjust: none
+	-ms-text-size-adjust: none
+	text-size-adjust: none
+	+mr
+
+
+a
+	text-decoration: none
+	outline: none
+
+button
+	background-color: $n
+	border: none
+	outline: none
+	padding: 0
+	cursor: pointer
+
+
+
+h1, h2, h3, h4, h5, h6
+	margin: 0 0 .8em
+	font-weight: normal
+	line-height: 1.1
+
+h1
+	font-size: 2em
+h2
+	font-size: 1.8em
+h3
+	font-size: 1.6em
+h4
+	font-size: 1.5em
+h5
+	font-size: 1.4em
+h6
+	font-size: 1.3em
+
+b, strong
+	font-weight: normal
+
+p
+	margin: 0
+
+
+.btn
+	display: inline-block
+	vertical-align: top
+	// position: absolute
+	// bottom: 80px
+	// left: 50%
+	// +trx(-50%)
+	padding: 23px
+	width: 90%
+	max-width: 320px
+	text-transform: uppercase
+	background-color: #C4203D
+	color: #fff
+	font-size: 20px
+	letter-spacing: 2.5px
+	border-radius: 64px
+	text-align: center
+	+br
+	+tr(.4s)
+	+r(700)
+		padding: 16px 10px
+		font-size: 16px
+		letter-spacing: .1em
+
+	&:hover
+		background-color: #922437
+
+.title
+	&__ms
+		font-size: 40px
+		color: #35251E
+		line-height: 1.5
+		margin-bottom: .6em
+		text-transform: uppercase
+		+br
+		font-weight: bold
+	&__main
+		// width: 110%
+		font-size: 136px
+		color: #fff
+		line-height: 1
+		transform: skew(10deg) translateX(5%)
+		+bu
+		+r(1300)
+			font-size: 100px
+		+r(960)
+			font-size: 80px
+		+r(800)
+			font-size: 60px
+		+r(600)
+			font-size: 50px
+		+r(500)
+			font-size: 40px
+		+r(400)
+			font-size: 32px
+		small
+			font-size: .8em
+		sub
+			font-size: .6em
+			bottom: 0
+
+.desc
+	&__ms
+		font-size: 16px
+		line-height: 2.5
+		color: #232524
+		+mr
+		+r(700)
+			line-height: 1.6
+
+.page
+	&__wrapper
+		overflow: hidden
+	&__layout
+		width: 100%
+		max-width: 1240px
+		padding: 0 20px
+		margin: 0 auto
+
+.section
+	margin-bottom: 65px
+	&-viewport
+		height: 90vh
+		position: relative
+		overflow: hidden
+		+r(700)
+			height: auto
+	&-content
+		background-color: #F2F2F2
+		padding: 110px 0 70px
+		+r(700)
+			padding: 80px 0 40px
+		.mod-justify
+			align-items: center
+	&-skew
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 110%
+		transform-origin: 50% 50%
+		transform: rotate(-10deg) translate3d(-50%, -70%, 0)
+		text-align: center
+		margin-bottom: 0
+		opacity: 0
+		transition: .4s 2.2s
+	&__wrap
+		margin-bottom: 40px
+	&__header
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 100px
+		+r(700)
+			margin-bottom: 60px
+		&_justify
+			justify-content: space-between
+			align-items: flex-start
+			+r(1020)
+				flex-wrap: wrap
+		&_box
+			display: flex
+			align-items: center
+			padding-top: 10px
+			width: 100%
+		.section__list
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			list-style-type: none
+			margin: 0
+			padding-top: 5px
+			+r(1020)
+				padding: 5px 0 0
+				margin-top: 40px
+	&__title
+		font-size: 80px
+		margin-bottom: 0
+		white-space: nowrap
+		line-height: .8em
+		color: #35251E
+		text-transform: uppercase
+		+br
+		font-weight: bold
+		+r(1000)
+			white-space: normal
+		+r(700)
+			font-size: 50px
+		+r(450)
+			font-size: 40px
+			line-height: 1
+	&__nav
+		margin-left: auto
+		display: flex
+		align-items: center
+		&_button
+			padding: 4px 6px
+			margin-left: 10px
+		&_prev
+			transform: translate3d(0, 0, 0) rotateY(180deg)
+	&__item
+		width: 40%
+		margin-left: 10%
+		margin-bottom: 40px
+		+r(1080)
+			width: 45%
+			margin-left: 5%
+		+r(1020)
+			margin-left: 0
+			margin-right: 20px
+		+r(600)
+			width: 100%
+			margin: 0 0 20px 0
+		&_title
+			font-size: 24px
+			margin-bottom: .8em
+			color: #35251E
+			+br
+	&__desc
+		color: #232524
+		font-size: 16px
+		line-height: 2em
+		+ml
+		+r(1200)
+			line-height: 1.4
+			margin-bottom: .6em
+		b
+			+mb
+			+r(1200)
+				display: block
+			+r(650)
+				display: inline
+			+r(400)
+				display: block
+		a
+			color: inherit
+			+tr(.4s)
+			&:hover
+				color: #C4203D
+
+.social
+	display: inline-block
+	vertical-align: top
+	list-style-type: none
+	font-size: 0
+	padding: 0
+	margin: 0 0 0 24px
+	&__item
+		display: inline-block
+		vertical-align: top
+		margin-left: 24px
+	&__link
+		display: inline-block
+		vertical-align: top
+		&:hover
+			img
+				+gray-half
+		img
+			+tr(.4s)
+
+.map
+	position: relative
+	width: 100%
+	height: 530px
+	margin-bottom: 130px
+	.btn
+		position: absolute
+		bottom: 80px
+		left: 50%
+		+trx(-50%)
+		z-index: 2
+
+.startscreen
+	position: relative
+	height: 96vh
+	margin-bottom: 0
+	overflow: hidden
+	will-change: transform
+	+r(1020)
+		height: 100vh
+	&__img
+		+vcenter
+		min-width: 100%
+		min-height: 100%
+	&__wrap
+		background-color: rgba(0, 0, 0, .6)
+		+coverdiv
+	&.aos-animate
+		will-change: transform
+		.section-skew
+			opacity: 1
+			top: 50%
+			transform: rotate(-10deg) translate3d(-50%, -60%, 0)
+
+	.centerdiv
+		position: absolute
+		width: 100%
+		bottom: 80px
+		left: 0%
+		white-space: nowrap
+
+#map
+	+coverdiv
+	// background-image: url('../img/content/map.jpg')
+
+.gallery
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__pic
+		display: block
+		position: relative
+		font-size: 0
+		height: 160px
+		width: 100%
+		width: 46%
+		margin-bottom: 8%
+		overflow: hidden
+		+r(1020)
+			margin-bottom: 20px
+			width: 32%
+		+r(650)
+			width: 48%
+	&__img
+		+vcenter
+		min-width: 100%
+		min-height: 100%
+
+
+// ***** paralax
+.parallax
+	+coverdiv
+.parallax_bg
+	height: 160%
+	position: relative
+	top: 0%
+	left: 0
+	width: 100%
+	will-change: transform
+	background-position: 50% 100%
+	background-repeat: no-repeat
+	background-attachment: scroll
+	backface-visibility: hidden
+	background-size: cover
+	// position: relative
+	// background: #E8E8E8 url(../img/content/start.jpg) 50% 50% no-repeat
+	// background-attachment: fixed
+	// background-size: cover
+	// +coverdiv
+
+.parallax-image-wrapper
+	position: fixed
+	left: 0
+	width: 100%
+	overflow: hidden
+
+.parallax-image-wrapper-50
+	height: 50%
+	top: -50%
+
+.parallax-image-wrapper-100
+	height: 100%
+	top: -100%
+
+.parallax-image
+	display: none
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+
+.parallax-image-50
+	height: 200%
+	top: -50%
+
+.parallax-image-100
+	height: 100%
+	top: 0
+
+.parallax-image.skrollable-between
+	display: block
+
+.no-skrollr .parallax-image-wrapper
+	display: none !important
+
+#skrollr-body
+	height: 100%
+	overflow: visible
+	position: relative
+
+.gap
+	background: transparent center no-repeat
+	background-size: cover
+
+.skrollr .gap
+	background: transparent !important
+
+.gap-50
+	height: 50%
+
+.gap-100
+	height: 100%
+
+
+
+// ***** paralax
+
+
+.happy
+	&__content
+		position: relative
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		flex-direction: column
+		z-index: 20
+		&.aos-animate
+			.happy__title
+				+trx(0)
+				transition: .4s
+			.happy__pic
+				+trx(0)
+				transition: .4s .8s
+			.btn
+				+trx(0)
+				transition: .4s 1.6s
+	&__title
+		font-size: 80px
+		line-height: 1.5
+		color: #fff
+		+br
+		+trx(20px)
+		font-weight: bold
+	&__pic
+		margin-top: 50px
+		margin-bottom: 80px
+		+trx(20px)
+	.btn
+		+trx(20px)
+
+.wide-img
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	min-height: 100%
+	min-width: 100%
+
+.centerdiv
+	position: relative
+	text-align: center
+
+.mod-justify
+	display: flex
+	justify-content: space-between
+	+r(1020)
+		flex-wrap: wrap
+
+.col-50
+	width: 50%
+	+r(1020)
+		width: 100%
+		margin-bottom: 40px
+
+.col-35
+	width: 35%
+	+r(1020)
+		width: 100%
+
+.mark
+	color: #FFC000
+
+[data-aos]
+	opacity: 0
+	&.aos-animate
+		opacity: 1
+[data-aos=slide-left]
+	transform: translate3d(10%,0,0)
+
+.mod-wrap-mob
+	+r(650)
+		flex-wrap: wrap
+		.social
+			margin: 10px 0 0
+			&__item
+				margin: 0 15px 0 0

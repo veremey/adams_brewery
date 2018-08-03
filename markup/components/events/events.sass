@@ -1,0 +1,122 @@
+
+.events
+	margin-left: -15px
+	margin-right: -15px
+	margin-bottom: 10px
+	&__item
+		display: block
+		position: relative
+		background-color: #fff
+		margin-left: 15px
+		margin-bottom: 30px
+		padding-bottom: 35px
+		color: #000
+		box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+		&:hover
+			.events
+				&__img
+					transform: translate(-50%, -50%) scale(1.05)
+				&__btn
+					right: 16px
+	&__pic
+		display: block
+		position: relative
+		width: 100%
+		height: 220px
+		border-bottom: 5px solid #FFC500
+		font-size: 0
+		overflow: hidden
+	&__img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		min-width: 100%
+		min-height: 100%
+		+tr(1s)
+	&__container
+		display: block
+		position: relative
+		padding: 27px 32px 10px
+	&__btn
+		display: inline-block
+		vertical-align: top
+		position: absolute
+		top: -24px
+		right: 22px
+		width: 44px
+		height: 44px
+		background-color: #FFC500
+		border-radius: 100%
+		+tr(.6s)
+		img
+			+vcenter
+	&__header
+		display: block
+	&__label
+		text-transform: uppercase
+		font-size: 14px
+		margin-bottom: 1em
+		color: #C4203D
+		+br
+		font-weight: bold
+	&__title
+		color: #35251E
+		font-size: 24px
+		margin-bottom: .66em
+		+br
+	&__content
+		display: block
+		padding-bottom: 5px
+		margin-bottom: 25px
+	&__desc
+		font-size: 14px
+		line-height: 2em
+		color: #232524
+		+ml
+	&__footer
+		display: flex
+		align-items: center
+		justify-content: space-between
+		color: #35251E
+		&_icon
+			display: inline-block
+			vertical-align: top
+			margin-right: 16px
+		&_title
+			font-size: 20px
+			text-transform: uppercase
+			color: #35251E
+			+br
+			font-weight: bold
+	&__box
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&_wrap
+			display: flex
+			align-items: center
+			width: 100%
+			margin-right: 16px
+
+	.slick-slide
+		// overflow: hidden
+		margin-left: 15px
+		margin-bottom: 30px
+		padding-right: 15px
+		.events__item
+			margin: 0
+			box-shadow: none
+	.slick-active .events__item
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			top: 0
+			z-index: -2
+			border-radius: 34px
+			box-shadow: 0 0 20px rgba(0, 0, 0, .2)

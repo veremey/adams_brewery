@@ -1,0 +1,55 @@
+
+.page__footer
+	background: #232524
+	padding: 41px 0 47px
+
+.footer
+	&__content
+		display: flex
+		justify-content: space-between
+		color: #fff
+		+r(1020)
+			flex-wrap: wrap
+	&__col
+		+r(1020)
+			width: 49%
+			margin-bottom: 30px
+		+r(750)
+			width: 100%
+			text-align: center
+	&__title
+		text-transform: uppercase
+		font-size: 20px
+		margin-bottom: .6em
+		+br
+	&__desc
+		font-size: 16px
+		line-height: 1.875
+		color: #fff
+		+mr
+		+r(400)
+			margin-bottom: 10px
+		b
+			+mb
+			+r(400)
+				display: block
+	&__logo
+		font-size: 0
+		+tr(.4s)
+		&:hover
+			opacity: .8
+		&_pic
+			display: inline-block
+			vertical-align: top
+			width: 100%
+			max-width: 209px
+	&__partner
+		display: block
+		width: 200px
+		+r(750)
+			margin: 0 auto
+		img
+			display: inline-block
+			vertical-align: top
+			max-width: 100%
+
