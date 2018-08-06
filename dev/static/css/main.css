@@ -1219,9 +1219,9 @@ p {
   }
 }
 
-.gallery__pic:hover .gallery__img {
-  -webkit-transform: translate(-50%, -50%) rotate(-5deg) scale(1.1);
-          transform: translate(-50%, -50%) rotate(-5deg) scale(1.1);
+.gallery__pic:hover {
+  -webkit-transform: rotate(-5deg) scale(1.1) !important;
+          transform: rotate(-5deg) scale(1.1) !important;
 }
 
 .gallery__img {
