@@ -37,7 +37,7 @@
 		font-size: 0
 		+tr(.4s)
 		&:hover
-			opacity: .8
+			filter: drop-shadow(0px 1px 1px #FFC000)
 		&_pic
 			display: inline-block
 			vertical-align: top
@@ -46,8 +46,11 @@
 	&__partner
 		display: block
 		width: 200px
+		+tr(.4s)
 		+r(750)
 			margin: 0 auto
+		&:hover
+			opacity: .8
 		img
 			display: inline-block
 			vertical-align: top

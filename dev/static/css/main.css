@@ -1750,7 +1750,8 @@ p {
 }
 
 .footer__logo:hover {
-  opacity: .8;
+  -webkit-filter: drop-shadow(0px 1px 1px #FFC000);
+          filter: drop-shadow(0px 1px 1px #FFC000);
 }
 
 .footer__logo_pic {
@@ -1763,12 +1764,18 @@ p {
 .footer__partner {
   display: block;
   width: 200px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media only screen and (max-width: 750px) {
   .footer__partner {
     margin: 0 auto;
   }
+}
+
+.footer__partner:hover {
+  opacity: .8;
 }
 
 .footer__partner img {
@@ -1851,6 +1858,18 @@ p {
   opacity: .9;
 }
 
+.header__info .social__item:hover #facebook-letter-logo,
+.header__info .social__item:hover #IG {
+  fill: #FFC000;
+}
+
+.header__info .social__img {
+  display: inline-block;
+  vertical-align: top;
+  width: 55px;
+  height: 55px;
+}
+
 .header__tel {
   color: #fff;
   font-size: 20px;
@@ -1908,12 +1927,45 @@ p {
   }
 }
 
-.header__logo:hover {
-  opacity: .9;
+.header__logo:hover #LOGO-WHITE,
+.header__logo:hover #Fill-27,
+.header__logo:hover #Fill-29,
+.header__logo:hover #Fill-31,
+.header__logo:hover #Fill-33,
+.header__logo:hover #Fill-35,
+.header__logo:hover #Fill-37,
+.header__logo:hover #Fill-39,
+.header__logo:hover #Fill-41,
+.header__logo:hover #Fill-43,
+.header__logo:hover #fill-my {
+  fill: #FFC000;
 }
 
 .header__logo img {
   max-width: 100%;
+  width: 100%;
+}
+
+.header #facebook-letter-logo,
+.header #IG,
+.header #LOGO-WHITE {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#Fill-27,
+#Fill-29,
+#Fill-31,
+#Fill-33,
+#Fill-35,
+#Fill-37,
+#Fill-39,
+#Fill-41,
+#Fill-43,
+#fill-my {
+  fill: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .nav {
