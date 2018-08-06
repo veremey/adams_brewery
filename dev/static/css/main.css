@@ -1220,8 +1220,8 @@ p {
 }
 
 .gallery__pic:hover {
-  -webkit-transform: rotate(-5deg) scale(1.1) !important;
-          transform: rotate(-5deg) scale(1.1) !important;
+  -webkit-transform: rotate(5deg) scale(1.1) !important;
+          transform: rotate(5deg) scale(1.1) !important;
 }
 
 .gallery__img {
