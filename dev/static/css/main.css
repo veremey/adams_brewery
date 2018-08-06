@@ -1219,6 +1219,11 @@ p {
   }
 }
 
+.gallery__pic:hover .gallery__img {
+  -webkit-transform: translate(-50%, -50%) rotate(-5deg) scale(1.1);
+          transform: translate(-50%, -50%) rotate(-5deg) scale(1.1);
+}
+
 .gallery__img {
   position: absolute;
   top: 50%;
@@ -1227,6 +1232,8 @@ p {
           transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .parallax {

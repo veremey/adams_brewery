@@ -344,10 +344,14 @@ p
 			width: 32%
 		+r(650)
 			width: 48%
+		&:hover
+			.gallery__img
+				transform: translate(-50%, -50%) rotate(-5deg) scale(1.1)
 	&__img
 		+vcenter
 		min-width: 100%
 		min-height: 100%
+		+tr(.8s)
 
 
 // ***** paralax
