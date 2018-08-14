@@ -1,0 +1,84 @@
+
+.history
+	position: relative
+	&__top
+		position: relative
+		top: -150px
+		left: calc(100% - 250px)
+		width: 250px
+	&__nav
+		border-bottom: 1px solid #D5D5D5
+		+try(-60px)
+	&__year
+		color: #fff
+		font-size: 80px
+		line-height: 1
+		text-align: right
+		+br
+		font-weight: bold
+	&__item
+		padding: 0 20px
+	&__text
+		margin-bottom: 14px
+	&__content
+		margin-top: 40px
+	&__pic
+		font-size: 0
+		// overflow: hidden
+		img
+			display: inline-block
+			vertical-align: top
+			max-width: 100%
+	.title__ns
+		color: #C4203D
+	.mod-justify
+		display: flex!important
+		align-items: center
+		.history__pic
+			flex: 0 0 46%
+		.history__text
+			flex: 0 0 50%
+	.section__nav
+		justify-content: flex-end
+		padding-right: 20px
+		padding-bottom: 10px
+	.slick-dots
+		position: absolute
+		top: -106px
+		left: 0
+		font-size: 0
+		padding: 0 0 0 20px
+		margin: 0
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: calc(100% - 200px)
+		li
+			display: inline-block
+			vertical-align: top
+			// margin: 0 40px 0 10px
+		button
+			position: relative
+			font-size: 18px
+			padding: 6px 4px 17px
+			border-bottom: 5px solid $n
+			color: #35251E
+			+br
+			font-weight: bold
+		.slick-active
+			button
+				// border-bottom: 5px solid $red
+				color: $red
+				font-size: 24px
+				&:after
+					content: ''
+					position: absolute
+					bottom: 2px
+					left: 0
+					right: 0
+					height: 5px
+					background-color: $red
+
+
+.slide-year
+	display: none

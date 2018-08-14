@@ -61,85 +61,23 @@ b, strong
 p
 	margin: 0
 
-
-.btn
-	display: inline-block
-	vertical-align: top
-	// position: absolute
-	// bottom: 80px
-	// left: 50%
-	// +trx(-50%)
-	padding: 23px
-	width: 90%
-	max-width: 320px
-	text-transform: uppercase
-	background-color: #C4203D
-	color: #fff
-	font-size: 20px
-	letter-spacing: 2.5px
-	border-radius: 64px
-	text-align: center
-	+br
-	+tr(.4s)
-	+r(700)
-		padding: 16px 10px
-		font-size: 16px
-		letter-spacing: .1em
-
-	&:hover
-		background-color: #922437
-
-.title
-	&__ms
-		font-size: 40px
-		color: #35251E
-		line-height: 1.5
-		margin-bottom: .6em
-		text-transform: uppercase
-		+br
-		font-weight: bold
-	&__main
-		// width: 110%
-		font-size: 136px
-		color: #fff
-		line-height: 1
-		transform: skew(10deg) translateX(5%)
-		+bu
-		+r(1300)
-			font-size: 100px
-		+r(960)
-			font-size: 80px
-		+r(800)
-			font-size: 60px
-		+r(600)
-			font-size: 50px
-		+r(500)
-			font-size: 40px
-		+r(400)
-			font-size: 32px
-		small
-			font-size: .8em
-		sub
-			font-size: .6em
-			bottom: 0
-
-.desc
-	&__ms
-		font-size: 16px
-		line-height: 2.5
-		color: #232524
-		+mr
-		+r(700)
-			line-height: 1.6
-
 .page
 	&__wrapper
 		overflow: hidden
 	&__layout
+		position: relative // add to events page
 		width: 100%
 		max-width: 1240px
 		padding: 0 20px
 		margin: 0 auto
+	&__list
+		padding: 50px 20px
+		margin: 0 auto
+		li
+			display: block
+			margin-bottom: 10px
+			color: #333
+			text-align: center
 
 .section
 	margin-bottom: 65px
@@ -167,6 +105,14 @@ p
 		margin-bottom: 0
 		opacity: 0
 		transition: .4s 2.2s
+	&-gray
+		background-color: #F2F2F2
+		padding: 80px 0 60px
+
+	&__toper
+		margin-bottom: 40px
+		.title__ms
+			line-height: 1.1
 	&__wrap
 		margin-bottom: 40px
 	&__header
@@ -196,6 +142,10 @@ p
 			+r(1020)
 				padding: 5px 0 0
 				margin-top: 40px
+		.title__ms
+			margin-bottom: 0
+			white-space: nowrap
+			width: 100%
 	&__title
 		font-size: 80px
 		margin-bottom: 0
@@ -221,6 +171,17 @@ p
 			margin-left: 10px
 		&_prev
 			transform: translate3d(0, 0, 0) rotateY(180deg)
+	&__list
+		padding: 0
+		margin: 0
+		list-style-type: none
+		&.mod-justify
+			.section
+				&__item
+					margin-left: 0
+			.mod-special
+				white-space: nowrap
+				margin-right: 2%
 	&__item
 		width: 40%
 		margin-left: 10%
@@ -260,6 +221,83 @@ p
 			+tr(.4s)
 			&:hover
 				color: #C4203D
+
+.title
+	&__main
+		// width: 110%
+		font-size: 136px
+		color: #fff
+		line-height: 1
+		transform: skew(10deg) translateX(5%)
+		+bu
+		+r(1300)
+			font-size: 100px
+		+r(960)
+			font-size: 80px
+		+r(800)
+			font-size: 60px
+		+r(600)
+			font-size: 50px
+		+r(500)
+			font-size: 40px
+		+r(400)
+			font-size: 32px
+		small
+			font-size: .8em
+		sub
+			font-size: .6em
+			bottom: 0
+	&__ms
+		font-size: 40px
+		color: #35251E
+		line-height: 1.5
+		margin-bottom: .6em
+		text-transform: uppercase
+		+br
+		font-weight: bold
+	&__ns
+		font-size: 24px
+		color: #8c8c8c
+		+br
+		font-weight: bold
+		line-height: 1.33
+
+
+.desc
+	&__ms
+		font-size: 16px
+		line-height: 2.5
+		color: #232524
+		+mr
+		+r(700)
+			line-height: 1.6
+
+.btn
+	display: inline-block
+	vertical-align: top
+	// position: absolute
+	// bottom: 80px
+	// left: 50%
+	// +trx(-50%)
+	padding: 23px
+	width: 90%
+	max-width: 320px
+	text-transform: uppercase
+	background-color: #C4203D
+	color: #fff
+	font-size: 20px
+	letter-spacing: 2.5px
+	border-radius: 64px
+	text-align: center
+	+br
+	+tr(.4s)
+	+r(700)
+		padding: 16px 10px
+		font-size: 16px
+		letter-spacing: .1em
+
+	&:hover
+		background-color: #922437
 
 .social
 	display: inline-block
@@ -322,6 +360,29 @@ p
 		left: 0%
 		white-space: nowrap
 
+.shortscreen
+	position: relative
+	height: 400px
+	background-color: #000
+	overflow: hidden
+	&__title
+		position: absolute
+		bottom: 95px
+		left: 40px
+		color: #fff
+		font-size: 80px
+		line-height: 1
+		margin-bottom: 0
+		+br
+		font-weight: bold
+	.page__layout
+		position: relative
+		height: 100%
+
+.column-text
+	column-count: 2
+	column-gap: 6%
+
 #map
 	+coverdiv
 	// background-image: url('../img/content/map.jpg')
@@ -351,6 +412,16 @@ p
 		min-width: 100%
 		min-height: 100%
 		+tr(.8s)
+
+.picture-slider
+	&__item
+		position: relative
+		height: 80vh
+		overflow: hidden
+	&__img
+		+vcenter
+		min-width: 100%
+		min-height: 100%
 
 
 // ***** paralax
@@ -424,15 +495,45 @@ p
 .skrollr .gap
 	background: transparent !important
 
-.gap-50
-	height: 50%
-
 .gap-100
 	height: 100%
+.gap-50
+	height: 50%
 
 
 
 // ***** paralax
+
+
+.tab
+	display: block
+	width: calc(100% + 40px )
+	margin-left: -20px
+	text-align: center
+	border-bottom: 3px solid #f4f4f4
+	margin-bottom: 40px
+	&__item
+		display: inline-block
+		vertical-align: top
+		position: relative
+		padding: 10px
+		font-size: 40px
+		color: #35251E
+		text-transform: uppercase
+		+br
+		font-weight: bold
+		&:after
+			content: none
+			position: absolute
+			bottom: -4px
+			left: 0
+			right: 0
+			height: 5px
+			background-color: $red
+		&.is-active
+			color: $red
+			&:after
+				content: ''
 
 
 .happy
@@ -491,6 +592,9 @@ p
 		width: 100%
 		margin-bottom: 40px
 
+.col-48
+	width: 48%
+
 .col-35
 	width: 35%
 	+r(1020)
@@ -498,6 +602,13 @@ p
 
 .mark
 	color: #FFC000
+
+.mod-mb50
+	margin-bottom: 50px
+.mod-mb30
+	margin-bottom: 30px
+.mod-mb0
+	margin-bottom: 0px
 
 [data-aos]
 	opacity: 0

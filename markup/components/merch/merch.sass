@@ -1,0 +1,61 @@
+
+.merch
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__item
+		display: inline-block
+		vertical-align: top
+		width: 23%
+		margin-bottom: 30px
+		&:hover
+			.merch__img
+				transform: translate3d(-50%, -52%, 0) scale(1.02)
+	&__pic
+		display: block
+		position: relative
+		height: 400px
+		width: 100%
+		margin-bottom: 16px
+		background-color: #f0f0f0
+	&__img
+		+vcenter
+		max-width: 96%
+		max-height: 96%
+		+tr(.4s)
+	&-discount
+		position: absolute
+		top: 20px
+		right: 0
+		padding: 6px 10px
+		background-color: $red
+		color: #fff
+		text-transform: uppercase
+		font-size: 14px
+		+br
+		letter-spacing: .08em
+	&__content
+		display: block
+	&__top
+		display: flex
+		justify-content: space-between
+		margin-bottom: 16px
+	&__title
+		display: block
+		font-size: 24px
+		color: #35251E
+		line-height: 1.33
+		margin-right: 16px
+		+br
+		font-weight: bold
+	&__price
+		display: block
+		font-size: 24px
+		color: #FFC500
+		line-height: 1.33
+		+br
+		font-weight: bold
+	&__desc
+		font-size: 14px
+		color: #232524
+		+ml
