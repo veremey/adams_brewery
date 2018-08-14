@@ -1,11 +1,4 @@
-'head': {
-    defaults: {
-        title: 'Adams street brewery',
-        useSocialMetaTags: false
-    }
-},
-
-'simpleSlider': {
+var data = {simpleSlider: {
 	first: {
 		pic: [{
 			img: 'pic-23.jpg',
@@ -30,24 +23,4 @@
 			desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries… "
 		}]
 	}
-},
-
-__pages: [{
-                name: 'about',
-                href: 'about.html'
-             },{
-                name: 'events_private_tours',
-                href: 'events_private_tours.html'
-             },{
-                name: 'index',
-                href: 'index.html'
-             },{
-                name: 'main',
-                href: 'main.html'
-             },{
-                name: 'merch',
-                href: 'merch.html'
-             },{
-                name: 'private_tours',
-                href: 'private_tours.html'
-             }]
+}};

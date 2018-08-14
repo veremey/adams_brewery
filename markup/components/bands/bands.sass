@@ -1,0 +1,77 @@
+
+.bands
+	text-align: center
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		font-size: 0
+		text-align: left
+		padding: 0
+		margin: 0 0 80px
+		list-style-type: none
+	&__item
+		position: relative
+		display: flex
+		width: 48%
+		min-height: 94px
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 2px
+			width: 100%
+			background-color: #e4e4e4
+			+tr(.4s)
+		&:hover
+			z-index: 5
+			&:before
+				left: -20px
+				width: calc(100% + 20px)
+				bottom: 0
+				height: 105%
+				background-color: #fff
+				box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05)
+			.bands
+				&__title
+					font-size: 28px
+				&__date
+					+trx(140%)
+					opacity: 0
+					+tr(.2s )
+			.events__btn
+				left: calc(100% - 50px)
+				opacity: 1
+	&__link
+		position: relative
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		overflow: hidden
+	&__title
+		font-size: 24px
+		color: #35251E
+		+br
+		line-height: 1.33
+	&__info
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: space-between
+		height: 100%
+		margin-right: 20px
+		// overflow: hidden
+		.events__btn
+			top: 22px
+			right: auto
+			left: -60px
+			opacity: 0
+			+tr(.4s)
+	&__date
+		font-size: 16px
+		color: #232524
+		text-align: right
+		+mr
+		+tr(.2s .3s)

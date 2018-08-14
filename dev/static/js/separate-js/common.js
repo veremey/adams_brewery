@@ -17,6 +17,25 @@ $(document).ready(function () {
 		slider: '.events'
 	});
 
+	Global.arrowSlider({
+		slider: '.arrow-slider'
+	});
+
+	Global.sliderSinc({
+		sliderTop: '.history__top',
+		sliderBottom: '.history__bottom'
+	});
+
+	Global.simpleSlider({
+		slider: '.simple-slider'
+	});
+
+	Global.pictureSlider({
+		slider: '.picture-slider'
+	});
+
+	Global.tab();
+
 	Global.square({
 		widthEl: '.four-slider__item',
 		heightEl: '.four-slider__content',

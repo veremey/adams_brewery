@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+	<head>
+		{{> head/head head.defaults}}
+	</head>
+
+	<body class="page">
+
+		<div class="page__wrapper">
+
+			<!-- shortscreen -->
+
+			<div class="section shortscreen"  data-aos="fade-down"  data-aos-duration="0"  data-aos-offset="20" data-aos-delay="0" >
+				<div id="parallax"  class="parallax" >
+					<div class="parallax_bg "  style='background-image: url(static/img/content/bar.png);'>
+					</div>
+				</div>
+
+				<div class="page__layout">
+					{{> header/header}}
+					<h2 class="shortscreen__title">Merchandise</h2>
+				</div>
+
+			</div>
+
+			<!-- section -->
+			<div class="section ">
+				<div class=" page__layout ">
+					<div class="tab">
+						<a href="#" class="tab__item js-tab is-active" data-open="shop" >Shop</a>
+						<a href="#" class="tab__item js-tab"  data-open="notshop" >Beer to go</a>
+					</div>
+
+					<div id="shop" class="js-tabItem">
+						{{> merch/merch}}
+						{{> merch/merch}}
+					</div>
+					<div id="notshop" class="js-tabItem">
+						<p>sdasdasd Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempore, harum corporis, debitis magnam asperiores, beatae obcaecati ratione fugiat libero aliquid minus nulla. Qui ipsam voluptate illo numquam voluptatibus nulla!</p>
+						{{> merch/merch}}
+					</div>
+
+				</div>
+			</div>
+
+			<!-- happy -->
+			<div class="section section-viewport" id="dragons">
+
+				<div id="parallax2" class="parallax" >
+					<div class="parallax_bg "  style='background-image: url(static/img/content/happy.png);'></div>
+				</div>
+
+				<div class="page__layout">
+					<div class="happy__content section-viewport col-50"  data-aos="slide-left" data-aos-offset="0"  data-aos-duration="650" data-aos-anchor-placement="top-center">
+						<p class="happy__title" >
+							JOIN US <br> TODAY FOR
+						</p>
+						<img src="static/img/general/happy.png" alt="happy pic" class="happy__pic">
+						<a href="#" class="btn">view more</a>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- start follow -->
+			<div class="section page__layout">
+				<div class="section__header mod-wrap-mob" >
+					<h2 class="section__title"  data-aos="slide-left" data-aos-offset="0"  data-aos-duration="400" data-aos-anchor-placement="center-bottom">follow us</h2>
+
+					<div class="section__header_box">
+						<ul class="social">
+							<li class="social__item"  data-aos="fade-up" data-aos-offset="0"  data-aos-duration="450" data-aos-anchor-placement="center-bottom">
+								<a href="#" class="social__link">
+									<img src="static/img/general/fb.svg" alt="facebook" class="social__img">
+								</a>
+							</li>
+							<li class="social__item"  data-aos="fade-up" data-aos-offset="0"  data-aos-duration="500" data-aos-anchor-placement="center-bottom">
+								<a href="#" class="social__link">
+									<img src="static/img/general/insta.svg" alt="instagram" class="social__img">
+								</a>
+							</li>
+						</ul>
+						<div class="section__nav">
+							<button class="section__nav_button section__nav_prev">
+								<img src="static/img/general/arrow.svg" alt="prev" class="section__nav_img">
+							</button>
+							<button class="section__nav_button section__nav_next">
+								<img src="static/img/general/arrow.svg" alt="next" class="section__nav_img">
+							</button>
+						</div>
+					</div>
+				</div>
+
+				{{> follow/follow}}
+
+			</div>
+			<!-- end follow -->
+
+			{{> footer/footer}}
+
+		</div>
+
+
+
+		<script src="static/js/main%=hash=%%=min=%.js"></script>
+
+		<!-- <script src="static/js/separate-js/stellar.js"></script> -->
+		<script src="static/js/separate-js/TweenMax.min.js"></script>
+		<script src="static/js/separate-js/ScrollMagic.js"></script>
+		<script src="static/js/separate-js/animation.gsap.js"></script>
+
+		<script src="static/js/separate-js/global.js"></script>
+		<script src="static/js/separate-js/common.js"></script>
+
+	</body>
+
+</html>

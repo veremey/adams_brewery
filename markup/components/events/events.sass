@@ -89,6 +89,13 @@
 			color: #35251E
 			+br
 			font-weight: bold
+		&_label
+			color: #35251E
+			font-size: 14px
+			line-height: 1.7
+			+br
+			b
+				font-weight: bold
 	&__box
 		width: 100%
 		display: flex
@@ -99,6 +106,17 @@
 			align-items: center
 			width: 100%
 			margin-right: 16px
+
+	&-all
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		.events
+			&__item
+				display: inline-block
+				vertical-align: top
+				width: calc(33.3333% - 20px)
+				margin-left: 0px
 
 	.slick-slide
 		// overflow: hidden
