@@ -44,7 +44,7 @@ $(document).ready(function () {
 
 	$('.menu__btn').click(function () {
 		$(this).toggleClass('is-active');
-		$('.nav, .header__wrap').toggleClass('is-active');
+		$('.nav, .header__wrap, .page__wrapper').toggleClass('is-active');
 	});
 
 

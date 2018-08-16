@@ -35,8 +35,6 @@ button
 	padding: 0
 	cursor: pointer
 
-
-
 h1, h2, h3, h4, h5, h6
 	margin: 0 0 .8em
 	font-weight: normal
@@ -64,6 +62,9 @@ p
 .page
 	&__wrapper
 		overflow: hidden
+		&.is-active
+			position: fixed
+			width: 100%
 	&__layout
 		position: relative // add to events page
 		width: 100%
@@ -262,7 +263,6 @@ p
 		font-weight: bold
 		line-height: 1.33
 
-
 .desc
 	&__ms
 		font-size: 16px
@@ -364,7 +364,7 @@ p
 	position: relative
 	height: 400px
 	background-color: #000
-	overflow: hidden
+	// overflow: hidden
 	&__title
 		position: absolute
 		bottom: 95px
@@ -386,6 +386,14 @@ p
 #map
 	+coverdiv
 	// background-image: url('../img/content/map.jpg')
+
+.price
+	display: block
+	font-size: 24px
+	color: #FFC500
+	line-height: 1.33
+	+br
+	font-weight: bold
 
 .gallery
 	display: flex
@@ -427,6 +435,7 @@ p
 // ***** paralax
 .parallax
 	+coverdiv
+	overflow: hidden
 .parallax_bg
 	height: 160%
 	position: relative
@@ -534,6 +543,10 @@ p
 			color: $red
 			&:after
 				content: ''
+	&__content
+		display: none
+		&.is-active
+			display: block
 
 
 .happy
@@ -594,6 +607,8 @@ p
 
 .col-48
 	width: 48%
+	+r(1020)
+		width: 100%
 
 .col-35
 	width: 35%

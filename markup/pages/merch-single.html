@@ -26,25 +26,61 @@
 
 			<!-- section -->
 			<div class="section ">
-				<div class=" page__layout ">
-					<div class="tab">
-						<a href="#" class="tab__item js-tab is-active" data-open="shop" >Shop</a>
-						<a href="#" class="tab__item js-tab"  data-open="notshop" >Beer to go</a>
+				<div class=" page__layout  mod-justify">
+					<div class="col-48">
+						<span class="merch__pic merch__pic_wide">
+							<img src="static/img/content/t-01-w.jpg" alt="t-shirt" class="merch__img">
+						</span>
 					</div>
 
-					<div id="shop" class="tab__content js-tabItem is-active">
-						{{> merch/merch}}
-						{{> merch/merch}}
-					</div>
-					<div id="notshop" class="tab__content js-tabItem">
-						<p class="desc__ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reprehenderit sed quis nam possimus nobis accusamus. Quibusdam quasi, commodi aspernatur aperiam temporibus iure, deleniti enim quas quis excepturi. Quod culpa id minima quibusdam veritatis aliquam repudiandae natus, saepe enim, placeat quae tenetur qui, soluta nostrum vitae ipsam. Hic voluptatibus excepturi incidunt nulla quibusdam voluptate deserunt, culpa aperiam consectetur maxime debitis, vitae delectus laboriosam non repellat est optio facilis adipisci ipsam.</p>
-						<p class="desc__ms"> Explicabo sit veniam, maiores id error, similique fugiat odit temporibus iure modi consequuntur laudantium ipsam dicta nulla molestias illum velit maxime aut alias, in minima nobis voluptate! Aperiam quisquam sapiente, quaerat dolorum eos nostrum rerum, eaque perspiciatis voluptate sed cumque quo sint ipsum earum perferendis quod ratione nam tenetur ipsa iure necessitatibus.</p>
-						<br>
-						<p class="desc__ms"> Illum aspernatur nesciunt ducimus at voluptates iste veritatis dolore dolorum ex maiores eaque vero, adipisci eum vitae sapiente sit atque consequatur ratione itaque aliquid deserunt amet nam. Pariatur expedita praesentium saepe impedit quibusdam rerum iste iusto quo, placeat deleniti, dicta, officia delectus quasi voluptatibus. Voluptatum, tempore! Cum rem sapiente laborum delectus, libero distinctio? Quo totam aperiam nihil dolore impedit qui cum ipsa cupiditate, minus possimus. Iure aliquam repudiandae vel quidem dicta minima culpa eveniet vero. Quibusdam obcaecati aliquid, voluptas dicta animi sapiente adipisci incidunt error sed atque dolorem ratione quam inventore eaque dolor magni blanditiis et, facilis, aliquam impedit sit! Quis aliquid aut magnam eligendi sequi error ab itaque libero ullam labore cumque maxime dicta molestias, dolor ipsa fuga nulla ex quae laborum neque. Eligendi quibusdam, ab quis laudantium fuga, quisquam hic, repellendus qui dolores odio eius ad incidunt rerum delectus voluptate similique accusamus aliquid! Aspernatur ducimus ratione at tenetur optio veniam, facilis, quam rerum, voluptatibus minima deleniti modi, sapiente eum? Inventore earum ut unde laborum sit architecto a dolor dolores sequi omnis, aliquid dicta odit, optio fugiat.</p>
+					<div class="col-48">
+						<div class="merch__content merch__content_wide ">
 
+							<h3 class="merch__title">Adam's T-Shirt</h3>
+							<p class="merch__price  price">&#36;19</p>
+
+							<div class="merch__text">
+								<p class="merch__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries… </p>
+							</div>
+							<div class="merch__info">
+								<div class="merch__info_row">
+									<div class="merch__info_col">
+										<b>size:</b>
+									</div>
+									<div class="merch__info_col">
+										<p>M, L, XL, XXL</p>
+									</div>
+								</div>
+								<div class="merch__info_row">
+									<div class="merch__info_col">
+										<b>Lorem ipsum:</b>
+									</div>
+									<div class="merch__info_col">
+										<p>Lorem ipsum.</p>
+									</div>
+								</div>
+								<div class="merch__info_row">
+									<div class="merch__info_col">
+										<b>share:</b>
+									</div>
+									<div class="merch__info_col">
+										{{> social-likes/social-likes}}
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 
 				</div>
+			</div>
+
+			<!-- prod  -->
+			<div class="section page__layout ">
+				<div class="section__header mod-mb50">
+					<h2 class="title__ms" data-aos="slide-left" data-aos-offset="0"  data-aos-duration="400" data-aos-anchor-placement="center-bottom">RELATED PRODUCTS</h2>
+				</div>
+				{{> merch/merch}}
+
 			</div>
 
 			<!-- happy -->

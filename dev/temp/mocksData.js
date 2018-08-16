@@ -45,6 +45,9 @@ __pages: [{
                 name: 'main',
                 href: 'main.html'
              },{
+                name: 'merch-single',
+                href: 'merch-single.html'
+             },{
                 name: 'merch',
                 href: 'merch.html'
              },{
