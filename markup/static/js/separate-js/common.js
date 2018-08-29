@@ -1,13 +1,19 @@
 
 
+
 $(document).ready(function () {
+
+	$('.cocoen').cocoen();
 
 	Global.initParallax({
 		parent: '#parallax'
 	});
-	Global.initParallax({
-		parent: '#parallax2'
-	});
+
+	if($('#parallax2').length) {
+		Global.initParallax({
+			parent: '#parallax2'
+		});
+	}
 
 	Global.fourSlider({
 		slider: '.four-slider'

@@ -1,3 +1,57 @@
 // File for sass-vars.
 $n: transparent
 $red: #C4203D
+
+
+.cocoen
+	box-sizing: border-box
+	cursor: pointer
+	line-height: 0
+	margin: 0
+	overflow: hidden
+	padding: 0
+	position: relative
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+.cocoen *
+	box-sizing: inherit
+.cocoen::after,
+.cocoen::before
+	box-sizing: inherit
+.cocoen img,.cocoen .picture>img
+	max-width: none
+.cocoen>img,.cocoen>.picture>img
+	display: block
+	width: 100%
+.cocoen>div:first-child,.picture .cocoen>div
+	height: 100%
+	left: 0
+	overflow: hidden
+	position: absolute
+	top: 0
+	width: 50%
+.cocoen-drag
+	background: #fff
+	bottom: 0
+	cursor: ew-resize
+	left: 50%
+	margin-left: -3px
+	position: absolute
+	top: 0
+	width: 6px
+.cocoen-drag::before
+	content: ''
+	position: absolute
+	right: 50%
+	top: 50%
+	margin-right: 20px
+	+arr(26, 38, #fff, l)
+.cocoen-drag::after
+	content: ''
+	position: absolute
+	left: 50%
+	top: 50%
+	margin-left: 20px
+	+arr(26, 38, #fff, r)
