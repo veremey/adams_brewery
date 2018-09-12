@@ -1,5 +1,7 @@
 
 .simple-slider
+	&__item
+		text-align: center
 	&__pic
 		position: relative
 		width: 100%
@@ -12,3 +14,22 @@
 		min-height: 100%
 	&__content
 		margin-bottom: 40px
+		text-align: left
+	&__footer
+		margin-top: 20px
+		display: flex
+		flex-wrap: wrap
+		.mod-justify
+			align-items: center
+			justify-content: flex-start
+			margin-right: 30px
+		.title__ms
+			font-size: 20px
+			margin-bottom: 0
+			text-transform: none
+	&__icon
+		margin-right: 20px
+	.btn
+		margin-top: 60px
+		+r(768)
+			margin-top: 30px

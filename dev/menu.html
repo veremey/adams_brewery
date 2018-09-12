@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -156,211 +157,415 @@
 								</div>
 							</div>
 						</div>
-					</div>					<h1 class="shortscreen__title" role="heading" aria-level="1">Merchandise</h1>
+					</div>					<h1 class="shortscreen__title"  role="heading" aria-level="1">Menu</h1>
 				</div>
 
 			</div>
 
 			<!-- section -->
 			<div class="section ">
-				<div class=" page__layout  mod-justify">
-					<div class="col-48">
-						<span class="merch__pic merch__pic_wide">
-							<img src="static/img/content/t-01-w.jpg" alt="t-shirt" class="merch__img">
-						</span>
-					</div>
+				<div class=" page__layout js-tab-parent">
+					<ul class="tab ">
+						<li class="tab__item is-active js-tab" data-open="beer all">Beer</li>
+						<li class="tab__item js-tab" data-open="bites">Bites</li>
+					</ul>
 
-					<div class="col-48">
-						<div class="merch__content merch__content_wide ">
+					<div class="tab__content js-tabItem  js-tab-parent is-active" data-tab="beer">
+						<ul class="tab wrap-flex">
+							<li class="tab__item is-active js-tab" data-tab="all" data-open="all">VIEW ALL</li>
+							<li class="tab__item js-tab" data-open="onTap">On Tap</li>
+							<li class="tab__item js-tab" data-open="houseBeer">House Beer</li>
+							<li class="tab__item js-tab" data-open="local">Local</li>
+							<li class="tab__item js-tab" data-open="german">German</li>
+							<li class="tab__item js-tab" data-open="cider">Cider</li>
+							<li class="tab__item js-tab" data-open="nonAlcoholic">Non Alcoholic</li>
+							<li class="tab__item js-tab" data-open="onDeck">On Deck</li>
+							<li class="tab__item js-tab" data-open="other">Other</li>
+						</ul>
 
-							<h2 class="merch__title" role="heading" aria-level="2">Adam's T-Shirt</h2>
-							<p class="merch__price  price">&#36;19</p>
-
-							<div class="merch__text">
-								<p class="merch__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries… </p>
-							</div>
-							<div class="merch__info">
-								<div class="merch__info_row">
-									<div class="merch__info_col">
-										<b>size:</b>
-									</div>
-									<div class="merch__info_col">
-										<p>M, L, XL, XXL</p>
-									</div>
+						<!-- start menu -->
+						<div class="section-zerro">
+							<div class="carte col-45 is-active js-tabItem" data-tab="onTap all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">On Tap</h2>
 								</div>
-								<div class="merch__info_row">
-									<div class="merch__info_col">
-										<b>Lorem ipsum:</b>
-									</div>
-									<div class="merch__info_col">
-										<p>Lorem ipsum.</p>
-									</div>
-								</div>
-								<div class="merch__info_row">
-									<div class="merch__info_col">
-										<b>share:</b>
-									</div>
-									<div class="merch__info_col">
-										<div class="share">
-											<a href="#" class="share__icon share__icon_pinterest">
-												<svg width="15px" height="22px" viewBox="0 0 13 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-													<g id="InnerPages---Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-														<g id="6-2-1-Merch-Single@2x" transform="translate(-913.000000, -1113.000000)" fill="#FFC500" fill-rule="nonzero">
-															<g id="Group-11" transform="translate(913.000000, 1112.000000)">
-																<g id="Group">
-																	<g id="Pinterest"  class="share__icon_item" transform="translate(0.000000, 1.111111)">
-																		<path d="M10.8742316,1.78069217 C9.78089139,0.632422587 8.26782787,0 6.61378074,0 C4.08714139,0 2.53314549,1.13308113 1.67443648,2.08356452 C0.616137295,3.25492504 0.00927254098,4.81025641 0.00927254098,6.3508477 C0.00927254098,8.28516183 0.748821721,9.76981925 1.98729508,10.3221522 C2.07044057,10.3594227 2.15409836,10.3781981 2.2361168,10.3781981 C2.4973873,10.3781981 2.70440574,10.1911728 2.77612705,9.89115875 C2.81793033,9.71904161 2.91480533,9.29443744 2.95691598,9.11010228 C3.04707992,8.74608379 2.97423156,8.57099622 2.7776127,8.31750035 C2.41941598,7.85383214 2.2526127,7.30553454 2.2526127,6.59195741 C2.2526127,4.47241138 3.69523566,2.2197562 6.36900615,2.2197562 C8.49052254,2.2197562 9.80840164,3.53890991 9.80840164,5.66237915 C9.80840164,7.00238195 9.54456967,8.24335155 9.06536885,9.15684461 C8.73237705,9.79156508 8.14682377,10.5481855 7.24789959,10.5481855 C6.85917008,10.5481855 6.50998975,10.3734903 6.28965164,10.0689365 C6.08150615,9.78102844 6.01290984,9.40910747 6.09661885,9.02149362 C6.19118852,8.58355051 6.3201332,8.12671991 6.44492828,7.68507776 C6.67254098,6.87846434 6.88770492,6.11663164 6.88770492,5.50881323 C6.88770492,4.46916071 6.30348361,3.7706039 5.43406762,3.7706039 C4.32914959,3.7706039 3.46352459,4.99834664 3.46352459,6.56567185 C3.46352459,7.33434216 3.65025615,7.90926159 3.73478484,8.13002662 C3.59559426,8.77522769 2.76834016,12.6110691 2.61142418,13.3343982 C2.52069672,13.7566485 1.9741291,17.0916632 2.87879098,17.3576012 C3.89523566,17.6563822 4.80379098,14.4082948 4.89626025,14.0412498 C4.97120902,13.7427491 5.23345287,12.6140395 5.39415984,11.9201906 C5.88483607,12.4372706 6.67489754,12.7868292 7.44364754,12.7868292 C8.8928791,12.7868292 10.196209,12.0733642 11.1135758,10.7779739 C12.0032787,9.52153566 12.4932889,7.77032367 12.4932889,5.84716267 C12.4932889,4.34367381 11.903125,2.86148242 10.8742316,1.78069217 Z" id="XMLID_799_"></path>
-																	</g>
-																</g>
-															</g>
-														</g>
-													</g>
-												</svg>
-											</a>
-											<a href="#" class="share__icon share__icon_facebook ">
-												<svg width="9px" height="20px"  viewBox="0 0 9 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-										
-													<g id="InnerPages---Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-														<g id="6-2-1-Merch-Single@2x" transform="translate(-954.000000, -1112.000000)" fill="#FFC500" fill-rule="nonzero">
-															<g id="Group-11" transform="translate(913.000000, 1112.000000)">
-																<g id="Group">
-																	<g id="facebook" class="share__icon_item">
-																		<path d="M41.3090527,10.652 L43.248205,10.652 L43.248205,19.6774194 C43.248205,19.8556129 43.3759182,20 43.5335339,20 L46.821436,20 C46.9790517,20 47.1067649,19.8556129 47.1067649,19.6774194 L47.1067649,10.6945161 L49.3359826,10.6945161 C49.4809297,10.6945161 49.6028792,10.5715484 49.6194283,10.4087742 L49.9579996,7.08606452 C49.9673013,6.99464516 49.9416788,6.90309677 49.8875804,6.83451613 C49.833425,6.76587097 49.7559297,6.72658065 49.6746109,6.72658065 L47.106879,6.72658065 L47.106879,4.64374194 C47.106879,4.01587097 47.4059037,3.69748387 47.9957356,3.69748387 C48.0797935,3.69748387 49.6746109,3.69748387 49.6746109,3.69748387 C49.8322266,3.69748387 49.9599398,3.55303226 49.9599398,3.37490323 L49.9599398,0.324967742 C49.9599398,0.146774194 49.8322266,0.00238709677 49.6746109,0.00238709677 L47.3608788,0.00238709677 C47.344558,0.00148387097 47.3083212,0 47.2549077,0 C46.8534499,0 45.4580203,0.0890967742 44.3557377,1.23554839 C43.1344159,2.506 43.3041866,4.02716129 43.3447603,4.29090323 L43.3447603,6.72651613 L41.3090527,6.72651613 C41.151437,6.72651613 41.0237238,6.87090323 41.0237238,7.04909677 L41.0237238,10.3293548 C41.0237238,10.5075484 41.151437,10.652 41.3090527,10.652 Z" id="XMLID_835_"></path>
-																	</g>
-																</g>
-															</g>
-														</g>
-													</g>
-												</svg>
-											</a>
-											<a href="#" class="share__icon share__icon_linkedin ">
-												<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-													<g id="InnerPages---Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-														<g id="6-2-1-Merch-Single@2x" transform="translate(-987.000000, -1112.000000)" fill="#FFC500" fill-rule="nonzero">
-															<g id="Group-11" transform="translate(913.000000, 1112.000000)">
-																<g id="Group">
-																	<g id="linkedin"  class="share__icon_item" transform="translate(74.000000, 0.000000)">
-																		<path d="M4.18993548,6.43419355 L0.576406452,6.43419355 C0.416032258,6.43419355 0.286083871,6.57864516 0.286083871,6.75677419 L0.286083871,19.6553548 C0.286083871,19.8335484 0.416032258,19.9779355 0.576406452,19.9779355 L4.18993548,19.9779355 C4.35030968,19.9779355 4.48025806,19.8335484 4.48025806,19.6553548 L4.48025806,6.75677419 C4.48025806,6.57864516 4.35030968,6.43419355 4.18993548,6.43419355 Z" id="XMLID_802_"></path>
-																		<path d="M2.38447742,0.022 C1.06966452,0.022 0,1.20922581 0,2.66851613 C0,4.12845161 1.06966452,5.31612903 2.38447742,5.31612903 C3.69824516,5.31612903 4.76703871,4.1283871 4.76703871,2.66851613 C4.76709677,1.20922581 3.69824516,0.022 2.38447742,0.022 Z" id="XMLID_803_"></path>
-																		<path d="M13.3812,6.1136129 C11.9298774,6.1136129 10.8570194,6.80683871 10.2062903,7.59451613 L10.2062903,6.75677419 C10.2062903,6.57864516 10.0763419,6.43419355 9.91596774,6.43419355 L6.45538065,6.43419355 C6.29500645,6.43419355 6.16505806,6.57864516 6.16505806,6.75677419 L6.16505806,19.6553548 C6.16505806,19.8335484 6.29500645,19.9779355 6.45538065,19.9779355 L10.0610129,19.9779355 C10.2213871,19.9779355 10.3513355,19.8335484 10.3513355,19.6553548 L10.3513355,13.2735484 C10.3513355,11.1230323 10.8770516,10.2852258 12.2262387,10.2852258 C13.6956194,10.2852258 13.8123871,11.6283226 13.8123871,13.3841935 L13.8123871,19.6554194 C13.8123871,19.8336129 13.9423355,19.978 14.1027097,19.978 L17.7096774,19.978 C17.8700516,19.978 18,19.8336129 18,19.6554194 L18,12.5803226 C18,9.38258065 17.4512323,6.1136129 13.3812,6.1136129 Z" id="XMLID_804_"></path>
-																	</g>
-																</g>
-															</g>
-														</g>
-													</g>
-												</svg>
-											</a>
-											<a href="#" class="share__icon share__icon_instagramm ">
-												<svg width="18px" height="22px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-													<g id="InnerPages---Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-														<g id="6-2-1-Merch-Single@2x" transform="translate(-1030.000000, -1114.000000)">
-															<g id="Group-11" transform="translate(913.000000, 1112.000000)">
-																<g id="Group">
-																	<g id="Instagram"   class="share__icon_item" transform="translate(117.000000, 2.222222)">
-																		<rect id="Rectangle-12" fill="#FFC500" x="0" y="0" width="16" height="17.7777778" rx="5"></rect>
-																		<path d="M8,14.2222222 C5.3490332,14.2222222 3.2,11.8344076 3.2,8.88888889 C3.2,5.94337022 5.3490332,3.55555556 8,3.55555556 C10.6509668,3.55555556 12.8,5.94337022 12.8,8.88888889 C12.8,11.8344076 10.6509668,14.2222222 8,14.2222222 Z M8,12.4444444 C9.7673112,12.4444444 11.2,10.852568 11.2,8.88888889 C11.2,6.92520978 9.7673112,5.33333333 8,5.33333333 C6.2326888,5.33333333 4.8,6.92520978 4.8,8.88888889 C4.8,10.852568 6.2326888,12.4444444 8,12.4444444 Z" id="Oval-7" fill="#FFFFFF" fill-rule="nonzero"></path>
-																		<ellipse id="Oval-6" fill="#FFFFFF" cx="12.8" cy="3.55555556" rx="1" ry="1"></ellipse>
-																	</g>
-																</g>
-															</g>
-														</g>
-													</g>
-												</svg>
-											</a>
-										
+								<div class="carte__content ">
+									<div class="carte__content_header ">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+										<div class="tooltip" >
+											<img class="tooltip__icon" src="static/img/content/camera.jpg" alt="camera icon">
+											<div class="tooltip__content js-parent">
+												<div class="section__nav">
+													<button class="section__nav_button section__nav_prev">
+														<img src="static/img/general/arrow.svg" alt="prev" aria-live="assertive" tabindex="-1" class="section__nav_img">
+													</button>
+													<button class="section__nav_button section__nav_next">
+														<img src="static/img/general/arrow.svg" alt="next" aria-live="assertive" tabindex="-1" class="section__nav_img">
+													</button>
+												</div>
+												<ul class="tooltip__slider">
+													<li class="tooltip__item">
+														<h4 class="tooltip__title" role="heading" aria-level="4">M-Phunk Type 1</h4>
+														<div class="tooltip__picture">
+															<img src="static/img/content/pic-26.jpg" alt="beer picture" class="tooltip__img">
+														</div>
+													</li>
+													<li class="tooltip__item">
+														<h4 class="tooltip__title" role="heading" aria-level="4">title</h4>
+														<div class="tooltip__picture">
+															<img src="static/img/content/pic-26.jpg" alt="beer picture" class="tooltip__img">
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="tooltip" >
+											<img class="tooltip__icon" src="static/img/content/oko.jpg" alt="camera icon">
+											<div class="tooltip__content tooltip__content_text js-parent">
+												<p class="tooltip__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores impedit sapiente adipisci nemo a, esse unde? Blanditiis porro nobis nostrum.</p>
+											</div>
 										</div>
 									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="houseBeer all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">House Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header ">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="local all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">local Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header ">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="german all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">german Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="cider all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">cider Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="nonAlcoholic all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">nonAlcoholic Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="onDeck all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">onDeck Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="other all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">other Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
+
+						<!-- end menu -->
 					</div>
 
-				</div>
-			</div>
-
-			<!-- prod  -->
-			<div class="section page__layout ">
-				<div class="section__header mod-mb50">
-					<h2 class="title__ms" role="heading" aria-level="2" data-aos="slide-left" data-aos-offset="0"  data-aos-duration="400" data-aos-anchor-placement="center-bottom">RELATED PRODUCTS</h2>
-				</div>
-				<div class="merch">
-					<a href="./merch-single.html" class="merch__item" tabindex="0">
-						<span class="merch__pic">
-							<img src="static/img/content/t-01.jpg" alt="t-shirt" class="merch__img">
-						</span>
-						<span class="merch__content">
-							<span class="merch__top">
-								<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
-								<span class="merch__price  price">&#36;19</span>
-							</span>
-							<span class="merch__desc">Lorem ipsum.</span>
-						</span>
-					</a>
-				
-					<a href="./merch-single.html" class="merch__item" tabindex="0">
-						<span class="merch__pic">
-							<img src="static/img/content/t-02.jpg" alt="t-shirt" class="merch__img">
-						</span>
-						<span class="merch__content">
-							<span class="merch__top">
-								<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
-								<span class="merch__price  price">&#36;9</span>
-							</span>
-							<span class="merch__desc">Sizes M, L, XL, XXL</span>
-						</span>
-					</a>
-				
-					<a href="./merch-single.html" class="merch__item" tabindex="0">
-						<span class="merch__pic">
-							<span class="merch-discount">discount</span>
-							<img src="static/img/content/t-01.jpg" alt="t-shirt" class="merch__img">
-						</span>
-						<span class="merch__content">
-							<span class="merch__top">
-								<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
-								<span class="merch__price  price">&#36;9</span>
-							</span>
-							<span class="merch__desc">Lorem ipsum.</span>
-						</span>
-					</a>
-				
-					<a href="./merch-single.html" class="merch__item" tabindex="0">
-						<span class="merch__pic">
-							<img src="static/img/content/t-02.jpg" alt="t-shirt" class="merch__img">
-						</span>
-						<span class="merch__content">
-							<span class="merch__top">
-								<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
-								<span class="merch__price  price">&#36;9</span>
-							</span>
-							<span class="merch__desc">Sizes M, L, XL, XXL</span>
-						</span>
-					</a>
-				
-				</div>
-
-			</div>
-
-			<!-- happy -->
-			<div class="section section-viewport" id="dragons">
-				<div id="parallax2" class="parallax" >
-					<div class="parallax_bg "  style='background-image: url(static/img/content/happy.png);'></div>
-				</div>
-
-				<div class="page__layout">
-					<div class="happy__content section-viewport col-50"  data-aos="slide-left" data-aos-offset="0"  data-aos-duration="650" data-aos-anchor-placement="top-center">
-						<h2 class="happy__title mod-mb0" role="heading" aria-level="2">
-							JOIN US <br> TODAY FOR
-						</h2>
-						<h2 class="happy__title happy__title_fill mod-mb50" role="heading" aria-level="2">
-							happy <br> hour
-						</h2>
-
-						<a href="#" class="btn" tabindex="0">view more</a>
+					<div  class="tab__content js-tabItem " data-tab="bites">
+						<div class="merch">
+							<a href="./merch-single.html" class="merch__item" tabindex="0">
+								<span class="merch__pic">
+									<img src="static/img/content/t-01.jpg" alt="t-shirt" class="merch__img">
+								</span>
+								<span class="merch__content">
+									<span class="merch__top">
+										<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
+										<span class="merch__price  price">&#36;19</span>
+									</span>
+									<span class="merch__desc">Lorem ipsum.</span>
+								</span>
+							</a>
+						
+							<a href="./merch-single.html" class="merch__item" tabindex="0">
+								<span class="merch__pic">
+									<img src="static/img/content/t-02.jpg" alt="t-shirt" class="merch__img">
+								</span>
+								<span class="merch__content">
+									<span class="merch__top">
+										<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
+										<span class="merch__price  price">&#36;9</span>
+									</span>
+									<span class="merch__desc">Sizes M, L, XL, XXL</span>
+								</span>
+							</a>
+						
+							<a href="./merch-single.html" class="merch__item" tabindex="0">
+								<span class="merch__pic">
+									<span class="merch-discount">discount</span>
+									<img src="static/img/content/t-01.jpg" alt="t-shirt" class="merch__img">
+								</span>
+								<span class="merch__content">
+									<span class="merch__top">
+										<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
+										<span class="merch__price  price">&#36;9</span>
+									</span>
+									<span class="merch__desc">Lorem ipsum.</span>
+								</span>
+							</a>
+						
+							<a href="./merch-single.html" class="merch__item" tabindex="0">
+								<span class="merch__pic">
+									<img src="static/img/content/t-02.jpg" alt="t-shirt" class="merch__img">
+								</span>
+								<span class="merch__content">
+									<span class="merch__top">
+										<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
+										<span class="merch__price  price">&#36;9</span>
+									</span>
+									<span class="merch__desc">Sizes M, L, XL, XXL</span>
+								</span>
+							</a>
+						
+						</div>
+						<div class="merch">
+							<a href="./merch-single.html" class="merch__item" tabindex="0">
+								<span class="merch__pic">
+									<img src="static/img/content/t-01.jpg" alt="t-shirt" class="merch__img">
+								</span>
+								<span class="merch__content">
+									<span class="merch__top">
+										<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
+										<span class="merch__price  price">&#36;19</span>
+									</span>
+									<span class="merch__desc">Lorem ipsum.</span>
+								</span>
+							</a>
+						
+							<a href="./merch-single.html" class="merch__item" tabindex="0">
+								<span class="merch__pic">
+									<img src="static/img/content/t-02.jpg" alt="t-shirt" class="merch__img">
+								</span>
+								<span class="merch__content">
+									<span class="merch__top">
+										<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
+										<span class="merch__price  price">&#36;9</span>
+									</span>
+									<span class="merch__desc">Sizes M, L, XL, XXL</span>
+								</span>
+							</a>
+						
+							<a href="./merch-single.html" class="merch__item" tabindex="0">
+								<span class="merch__pic">
+									<span class="merch-discount">discount</span>
+									<img src="static/img/content/t-01.jpg" alt="t-shirt" class="merch__img">
+								</span>
+								<span class="merch__content">
+									<span class="merch__top">
+										<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
+										<span class="merch__price  price">&#36;9</span>
+									</span>
+									<span class="merch__desc">Lorem ipsum.</span>
+								</span>
+							</a>
+						
+							<a href="./merch-single.html" class="merch__item" tabindex="0">
+								<span class="merch__pic">
+									<img src="static/img/content/t-02.jpg" alt="t-shirt" class="merch__img">
+								</span>
+								<span class="merch__content">
+									<span class="merch__top">
+										<span class="merch__title" role="heading" aria-level="3">Adam's T-Shirt</span>
+										<span class="merch__price  price">&#36;9</span>
+									</span>
+									<span class="merch__desc">Sizes M, L, XL, XXL</span>
+								</span>
+							</a>
+						
+						</div>
 					</div>
 
+
 				</div>
 			</div>
+
 
 			<!-- start follow -->
 			<div class="section  section-gray mod-mb0">
@@ -480,12 +685,15 @@
 		<script src="static/js/main.js"></script>
 
 		<!-- <script src="static/js/separate-js/stellar.js"></script> -->
+		<script src="static/js/separate-js/cocoen.min.js"></script>
+		<script src="static/js/separate-js/cocoen-jquery.min.js"></script>
 		<script src="static/js/separate-js/TweenMax.min.js"></script>
 		<script src="static/js/separate-js/ScrollMagic.js"></script>
 		<script src="static/js/separate-js/animation.gsap.js"></script>
 
 		<script src="static/js/separate-js/global.js"></script>
 		<script src="static/js/separate-js/common.js"></script>
+
 
 	</body>
 

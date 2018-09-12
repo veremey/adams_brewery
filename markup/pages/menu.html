@@ -1,0 +1,350 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+	<head>
+		{{> head/head head.defaults}}
+	</head>
+
+	<body class="page">
+
+		<div class="page__wrapper">
+
+			<!-- shortscreen -->
+
+			<div class="section shortscreen"  data-aos="fade-down"  data-aos-duration="0"  data-aos-offset="20" data-aos-delay="0" >
+				<div id="parallax"  class="parallax" >
+					<div class="parallax_bg "  style='background-image: url(static/img/content/bar.png);'>
+					</div>
+				</div>
+
+				<div class="page__layout">
+					{{> header/header}}
+					<h1 class="shortscreen__title"  role="heading" aria-level="1">Menu</h1>
+				</div>
+
+			</div>
+
+			<!-- section -->
+			<div class="section ">
+				<div class=" page__layout js-tab-parent">
+					<ul class="tab ">
+						<li class="tab__item is-active js-tab" data-open="beer all">Beer</li>
+						<li class="tab__item js-tab" data-open="bites">Bites</li>
+					</ul>
+
+					<div class="tab__content js-tabItem  js-tab-parent is-active" data-tab="beer">
+						<ul class="tab wrap-flex">
+							<li class="tab__item is-active js-tab" data-tab="all" data-open="all">VIEW ALL</li>
+							<li class="tab__item js-tab" data-open="onTap">On Tap</li>
+							<li class="tab__item js-tab" data-open="houseBeer">House Beer</li>
+							<li class="tab__item js-tab" data-open="local">Local</li>
+							<li class="tab__item js-tab" data-open="german">German</li>
+							<li class="tab__item js-tab" data-open="cider">Cider</li>
+							<li class="tab__item js-tab" data-open="nonAlcoholic">Non Alcoholic</li>
+							<li class="tab__item js-tab" data-open="onDeck">On Deck</li>
+							<li class="tab__item js-tab" data-open="other">Other</li>
+						</ul>
+
+						<!-- start menu -->
+						<div class="section-zerro">
+							<div class="carte col-45 is-active js-tabItem" data-tab="onTap all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">On Tap</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header ">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+										<div class="tooltip" >
+											<img class="tooltip__icon" src="static/img/content/camera.jpg" alt="camera icon">
+											<div class="tooltip__content js-parent">
+												<div class="section__nav">
+													<button class="section__nav_button section__nav_prev">
+														<img src="static/img/general/arrow.svg" alt="prev" aria-live="assertive" tabindex="-1" class="section__nav_img">
+													</button>
+													<button class="section__nav_button section__nav_next">
+														<img src="static/img/general/arrow.svg" alt="next" aria-live="assertive" tabindex="-1" class="section__nav_img">
+													</button>
+												</div>
+												<ul class="tooltip__slider">
+													<li class="tooltip__item">
+														<h4 class="tooltip__title" role="heading" aria-level="4">M-Phunk Type 1</h4>
+														<div class="tooltip__picture">
+															<img src="static/img/content/pic-26.jpg" alt="beer picture" class="tooltip__img">
+														</div>
+													</li>
+													<li class="tooltip__item">
+														<h4 class="tooltip__title" role="heading" aria-level="4">title</h4>
+														<div class="tooltip__picture">
+															<img src="static/img/content/pic-26.jpg" alt="beer picture" class="tooltip__img">
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="tooltip" >
+											<img class="tooltip__icon" src="static/img/content/oko.jpg" alt="camera icon">
+											<div class="tooltip__content tooltip__content_text js-parent">
+												<p class="tooltip__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores impedit sapiente adipisci nemo a, esse unde? Blanditiis porro nobis nostrum.</p>
+											</div>
+										</div>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="houseBeer all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">House Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header ">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="local all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">local Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header ">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="german all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">german Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="cider all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">cider Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="nonAlcoholic all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">nonAlcoholic Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="onDeck all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">onDeck Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carte col-45 is-active js-tabItem" data-tab="other all">
+								<div class="carte__header js-accordion">
+									<h2 class="title__ns" role="heading" aria-level="2">other Beer</h2>
+								</div>
+								<div class="carte__content ">
+									<div class="carte__content_header">
+										<h3 class="title__ns" role="heading" aria-level="3">Berghoff Dortwunder Lager</h3>
+									</div>
+									<ul class="carte__list">
+										<li class="carte__item">
+											<p class="carte__name">12oz Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">5.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">16oz Pint </p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">6.00</p>
+										</li>
+										<li class="carte__item">
+											<p class="carte__name">1 Liter Stein</p>
+											<p class="carte__dots"></p>
+											<p class="carte__cost">13.00</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- end menu -->
+					</div>
+
+					<div  class="tab__content js-tabItem " data-tab="bites">
+						{{> merch/merch}}
+						{{> merch/merch}}
+					</div>
+
+
+				</div>
+			</div>
+
+
+			<!-- start follow -->
+			{{> follow/follow}}
+			<!-- end follow -->
+
+			{{> footer/footer}}
+
+		</div>
+
+
+
+		<script src="static/js/main%=hash=%%=min=%.js"></script>
+
+		<!-- <script src="static/js/separate-js/stellar.js"></script> -->
+		<script src="static/js/separate-js/cocoen.min.js"></script>
+		<script src="static/js/separate-js/cocoen-jquery.min.js"></script>
+		<script src="static/js/separate-js/TweenMax.min.js"></script>
+		<script src="static/js/separate-js/ScrollMagic.js"></script>
+		<script src="static/js/separate-js/animation.gsap.js"></script>
+
+		<script src="static/js/separate-js/global.js"></script>
+		<script src="static/js/separate-js/common.js"></script>
+
+
+	</body>
+
+</html>

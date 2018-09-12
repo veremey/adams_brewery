@@ -36,6 +36,9 @@ __pages: [{
                 name: 'about',
                 href: 'about.html'
              },{
+                name: 'events',
+                href: 'events.html'
+             },{
                 name: 'events_private_tours',
                 href: 'events_private_tours.html'
              },{
@@ -44,6 +47,9 @@ __pages: [{
              },{
                 name: 'main',
                 href: 'main.html'
+             },{
+                name: 'menu',
+                href: 'menu.html'
              },{
                 name: 'merch-single',
                 href: 'merch-single.html'

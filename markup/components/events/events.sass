@@ -2,7 +2,9 @@
 .events
 	margin-left: -15px
 	margin-right: -15px
-	margin-bottom: 10px
+	margin-bottom: 40px
+	+r(768)
+		margin-bottom: 20px
 	&__item
 		display: block
 		position: relative
@@ -53,6 +55,7 @@
 			+vcenter
 	&__header
 		display: block
+		position: relative
 	&__label
 		text-transform: uppercase
 		font-size: 14px
@@ -117,6 +120,33 @@
 				vertical-align: top
 				width: calc(33.3333% - 20px)
 				margin-left: 0px
+
+	&_horizontal
+		display: flex
+		width: 48%
+		padding: 0
+		margin: 0 0 30px 0
+		border-bottom: 4px solid $yellow
+		+r(1020)
+			width: 100%
+		&:hover
+			.events__btn
+				right: -6px
+		.events__container
+			padding: 27px 25px 0
+		.events__pic
+			height: 100%
+			border-bottom: none
+			+r(450)
+				display: none
+		.events__btn
+			position: absolute
+			top: 7px
+			right: 0
+		.events__box_wrap
+			padding-bottom: 14px
+		.events__footer_label
+			line-height: 2em
 
 	.slick-slide
 		// overflow: hidden

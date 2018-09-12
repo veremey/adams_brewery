@@ -6,6 +6,10 @@
 		top: -150px
 		left: calc(100% - 250px)
 		width: 250px
+		+r(768)
+			top: 0
+			left: 0
+			padding: 0
 	&__nav
 		border-bottom: 1px solid #D5D5D5
 		+try(-60px)
@@ -16,6 +20,9 @@
 		text-align: right
 		+br
 		font-weight: bold
+		+r(768)
+			text-align: left
+			padding-bottom: 10px
 	&__item
 		padding: 0 20px
 	&__text
@@ -31,9 +38,12 @@
 			max-width: 100%
 	.title__ns
 		color: #C4203D
+		line-height: 2
 	.mod-justify
 		display: flex!important
-		align-items: center
+		// align-items: center
+		+r(768)
+			flex-direction: column
 		.history__pic
 			flex: 0 0 46%
 		.history__text

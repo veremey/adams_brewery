@@ -5,6 +5,8 @@
 	&:before
 		box-sizing: inherit
 
+
+
 html
 	+selection
 		background: rgba(0, 0, 0, .2)
@@ -59,6 +61,13 @@ b, strong
 p
 	margin: 0
 
+.red
+	color: #fff
+	font-size: 18px
+	background-color: #000
+	&__text
+		display: none
+
 .page
 	&__wrapper
 		overflow: hidden
@@ -79,6 +88,9 @@ p
 			margin-bottom: 10px
 			color: #333
 			text-align: center
+	&.is-fixed
+		overflow: hidden
+
 
 .section
 	margin-bottom: 65px
@@ -88,6 +100,12 @@ p
 		overflow: hidden
 		+r(700)
 			height: auto
+	&-zerro
+		font-size: 0
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		flex-wrap: wrap
 	&-content
 		background-color: #F2F2F2
 		padding: 110px 0 70px
@@ -109,7 +127,12 @@ p
 	&-gray
 		background-color: #F2F2F2
 		padding: 80px 0 60px
-
+	&-stay
+		position: relative
+		padding: 80px 0
+		text-align: center
+		.page__layout
+			z-index: 10
 	&__toper
 		margin-bottom: 40px
 		.title__ms
@@ -147,6 +170,8 @@ p
 			margin-bottom: 0
 			white-space: nowrap
 			width: 100%
+			+r(768)
+				white-space: normal
 	&__title
 		font-size: 80px
 		margin-bottom: 0
@@ -248,6 +273,11 @@ p
 		sub
 			font-size: .6em
 			bottom: 0
+	&__pp
+		font-size: 80px
+		color: #fff
+		+br
+		font-weight: bold
 	&__ms
 		font-size: 40px
 		color: #35251E
@@ -256,14 +286,38 @@ p
 		text-transform: uppercase
 		+br
 		font-weight: bold
+		&.text-normal
+			text-transform: none
+	&__xs
+		font-size: 32px
+		color: #fff
+		line-height: 1.8
+		margin-bottom: .6em
+		+br
+		font-weight: bold
+		i
+			font-style: italic
 	&__ns
 		font-size: 24px
 		color: #8c8c8c
 		+br
 		font-weight: bold
 		line-height: 1.33
+	&__m
+		font-size: 14px
+		color: #C4203D
+		+br
+		font-weight: bold
+		line-height: 1.33
 
 .desc
+	&__xs
+		font-size: 18px
+		line-height: 2.2
+		color: #35251E
+		+mr
+		+r(700)
+			line-height: 1.6
 	&__ms
 		font-size: 16px
 		line-height: 2.5
@@ -298,6 +352,130 @@ p
 
 	&:hover
 		background-color: #922437
+
+.carte
+	display: none
+	margin-bottom: 20px
+	&.is-active
+		display: inline-block
+		vertical-align: top
+	&__header
+		position: relative
+		border-bottom: 1px solid #E4E4E4
+		&:after
+			content: ''
+			position: absolute
+			right: 0
+			bottom: 20px
+			+arr(20, 11, #7F7F7F, t)
+			+tr(.6s)
+		&.is-hidden
+			&:after
+				+rotate(180)
+			+ .carte__content
+				max-height: 0
+				padding: 0
+				overflow: hidden
+		.title__ns
+			color: $red
+			text-transform: uppercase
+
+	&__content
+		padding: 16px 0
+		max-height: auto
+		+tr(.6s)
+		.title__ns
+			color: #35251E
+			font-weight: normal
+			margin-right: 20px
+		&_header
+			display: flex
+	&__list
+		margin: 0
+		padding: 0 0 0 20px
+		list-style-type: none
+	&__item
+		display: flex
+		align-items: flex-end
+		margin-bottom: 14px
+	&__name
+		font-size: 16px
+		color: #232524
+		line-height: 1.4
+		+mr
+	&__dots
+		flex: 1 1 auto
+		position: relative
+		border-bottom: 3px dotted #000
+		margin: 0 16px 4px 10px
+	&__cost
+		font-size: 16px
+		color: #232524
+		text-align: right
+		+mb
+
+.tooltip
+	position: relative
+	display: inline-block
+	vertical-align: top
+	&:hover
+		.tooltip__content
+			display: block!important
+	&__icon
+		display: inline-block
+		vertical-align: top
+		margin-right: 20px
+	&__content
+		position: absolute
+		top: calc(100% + 0px)
+		left: 40%
+		width: 760px
+		background-color: #fff
+		padding: 20px 20px 40px
+		+trx(-40%)
+		box-shadow: 0 0 8px rgba(0, 0, 0, .6)
+		border-left: 4px solid $red
+		z-index: 2
+		display: none
+		&:after
+			content: ''
+			position: absolute
+			top: -11px
+			left: 40%
+			margin-left: -11px
+			+arr(20, 11, #fff, t)
+			filter: drop-shadow(0 0 8px rgba(0, 0, 0, .6))
+			z-index: 10
+			+trx(-40%)
+		&_text
+			width: 320px
+
+	&__slider
+		margin: 0
+		padding: 0
+		list-style-type: none
+	&__title
+		margin-bottom: 20px
+		font-size: 24px
+		color: #35251E
+		+br
+	&__desc
+		font-size: 14px
+		color: #35251E
+		line-height: 2
+		+mb
+
+	&__picture
+		font-size: 0
+	&__img
+		max-width: 100%
+	.section__nav
+		position: absolute
+		top: 20px
+		right: 20px
+		z-index: 2
+
+
 
 .social
 	display: inline-block
@@ -346,6 +524,8 @@ p
 	&__wrap
 		background-color: rgba(0, 0, 0, .6)
 		+coverdiv
+	.page__layout
+		height: 100%
 	&.aos-animate
 		will-change: transform
 		.section-skew
@@ -374,7 +554,7 @@ p
 		line-height: 1
 		margin-bottom: 0
 		+br
-		font-weight: bold
+		// font-weight: bold
 	.page__layout
 		position: relative
 		height: 100%
@@ -382,6 +562,8 @@ p
 .column-text
 	column-count: 2
 	column-gap: 6%
+	+r(768)
+		column-count: 1
 	.desc__ms
 		margin-bottom: 2.5em
 
@@ -391,6 +573,8 @@ p
 	padding: 3px
 	background-color: #fff
 	// overflow: hidden
+	+r(768)
+		margin-top: 50px
 	&:before
 		content: ''
 		position: absolute
@@ -424,12 +608,18 @@ p
 		background-color: #fff
 		padding-left: 100px
 		z-index: 1
+		+r(768)
+			padding-left: 0
 
 	&__img
 		position: absolute
 		top: -10px
 		left: -40px
 		z-index: 5
+		+r(768)
+			top: -60px
+			left: 50%
+			+trx(-50%)
 	&__text
 		display: block
 		width: 100%
@@ -442,15 +632,19 @@ p
 		opacity: 0
 		transition: opacity .4s 1.6s
 		+mb
+		+r(768)
+			padding: 80px 20px 20px
 		&:before,
 		&:after
 			content: none
 
-
-
+.map
+	&-nob
+		margin-bottom: 40px
+		+ .section-gray
+			background-color: #fff
 #map
 	+coverdiv
-	// background-image: url('../img/content/map.jpg')
 
 .price
 	display: block
@@ -501,61 +695,24 @@ p
 .parallax
 	+coverdiv
 	overflow: hidden
-.parallax_bg
-	height: 160%
-	position: relative
-	top: 0%
-	left: 0
-	width: 100%
-	will-change: transform
-	background-position: 50% 100%
-	background-repeat: no-repeat
-	background-attachment: scroll
-	backface-visibility: hidden
-	background-size: cover
-	// position: relative
-	// background: #E8E8E8 url(../img/content/start.jpg) 50% 50% no-repeat
-	// background-attachment: fixed
-	// background-size: cover
-	// +coverdiv
+	&_bg
+		height: 160%
+		position: relative
+		top: 0%
+		left: 0
+		width: 100%
+		will-change: transform
+		background-position: 50% 100%
+		background-repeat: no-repeat
+		background-attachment: scroll
+		backface-visibility: hidden
+		background-size: cover
+		// position: relative
+		// background: #E8E8E8 url(../img/content/start.jpg) 50% 50% no-repeat
+		// background-attachment: fixed
+		// background-size: cover
+		// +coverdiv
 
-.parallax-image-wrapper
-	position: fixed
-	left: 0
-	width: 100%
-	overflow: hidden
-
-.parallax-image-wrapper-50
-	height: 50%
-	top: -50%
-
-.parallax-image-wrapper-100
-	height: 100%
-	top: -100%
-
-.parallax-image
-	display: none
-	position: absolute
-	bottom: 0
-	left: 0
-	width: 100%
-	background-repeat: no-repeat
-	background-position: center
-	background-size: cover
-
-.parallax-image-50
-	height: 200%
-	top: -50%
-
-.parallax-image-100
-	height: 100%
-	top: 0
-
-.parallax-image.skrollable-between
-	display: block
-
-.no-skrollr .parallax-image-wrapper
-	display: none !important
 
 #skrollr-body
 	height: 100%
@@ -575,8 +732,263 @@ p
 	height: 50%
 
 
-
 // ***** paralax
+
+.ppp
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: rgba(0, 0, 0, .8)
+	z-index: 1000
+	::-webkit-scrollbar
+		width: 8px
+	::-webkit-scrollbar-track
+		background: #f1f1f1
+	::-webkit-scrollbar-thumb
+		background-color: $red
+		+tr(.4s)
+		&:hover
+			background-color: $yellow
+	&.is-active
+		display: block
+	&__wrap
+		+coverdiv
+	&__box
+		position: absolute
+		top: 50%
+		left: 50%
+		bottom: 20px
+		width: 96%
+		max-width: 840px
+		// height: 100%
+		max-height: 92vh
+		transform: translate(-50%, -50%)
+		overflow: auto
+		display: none
+		z-index: 10
+		&.is-active
+			display: block
+	&__layout
+		margin: 0 80px
+		+r(768)
+			margin: 0 20px
+	&__header
+		position: relative
+		padding: 1px
+		background: url('../img/content/pic-04.jpg') 50% 50% no-repeat
+		background-size: cover
+		padding: 60px 0
+		&:after
+			content: ''
+			+coverdiv
+			z-index: 1
+			background-color: rgba(0, 0, 0, .6)
+		.ppp__layout
+			position: relative
+			z-index: 100
+		.title__xs
+			font-size: 32px
+			+br
+			font-weight: bold
+	&__container
+		background-color: #fff
+		padding: 40px 0 60px
+	&__form
+
+	&__icon
+		position: absolute
+		bottom: 20px
+		right: 0
+		display: inline-block
+		vertical-align: top
+		pointer-events: none
+	&__fieldset
+		position: relative
+		border: none
+		padding: 0
+		margin-bottom: 40px
+	&__label
+		display: block
+		width: 100%
+		font-size: 16px
+		text-transform: uppercase
+		color: #C4203D
+		margin-bottom: 20px
+		+br
+		font-weight: bold
+	&__inp
+		display: block
+		width: 100%
+		border: none
+		margin: 0
+		padding: 20px 0
+		border-bottom: 1px solid rgba(0, 0, 0, .25)
+		font-size: 18px
+		color: #35251E
+		+mr
+		+placeholder
+			color: #000
+	.close
+		z-index: 120
+	.btn
+		font-size: 24px
+		+br
+		font-weight: bold
+		.logo img
+			max-width: 100%
+
+.close
+	position: absolute
+	top: 20px
+	right: 20px
+	width: 32px
+	height: 32px
+	&:before
+		content: ''
+		position: absolute
+		top: 2px
+		left: 0
+		width: 36px
+		height: 1px
+		background-color: #fff
+		transform-origin: 0 0
+		transform: rotate(45deg)
+	&:after
+		content: ''
+		position: absolute
+		bottom: 3px
+		left: 0
+		width: 36px
+		height: 1px
+		background-color: #fff
+		transform-origin: 0 0
+		transform: rotate(-45deg)
+
+#reservation
+	height: 100%
+
+#years
+	height: 576px
+	width: 628px
+	border: 2px solid $yellow
+	.title__pp
+		text-transform: uppercase
+		margin-bottom: 10px
+		margin-top: 40px
+	.btn
+		width: 320px
+		max-width: 90%
+		margin-top: 20px
+		&-white
+			background-color: #fff
+			color: #000
+	.ppp__container
+		background-color: #000
+
+
+#thanks
+	height: 474px
+	+r(768)
+		height: 100%
+	.ppp__container
+		padding: 70px 0 80px
+		+r(1024)
+			padding-bottom: 30px 0 40px
+	.title__xs
+		color: #35251E
+	.close
+		&:after,
+		&:before
+			background-color: #000
+	.logo
+		display: inline-block
+		vertical-align: top
+		margin-bottom: 40px
+		max-width: 96%
+		width: 240px
+		+r(1024)
+			padding-bottom: 20px
+		#LOGO-WHITE path,
+		#Fill-27,
+		#Fill-29,
+		#Fill-31,
+		#Fill-33,
+		#Fill-35,
+		#Fill-37,
+		#Fill-39,
+		#Fill-41,
+		#Fill-43,
+		#fill-my
+			fill: #000
+		&:hover
+			#LOGO-WHITE,
+			#Fill-27,
+			#Fill-29,
+			#Fill-31,
+			#Fill-33,
+			#Fill-35,
+			#Fill-37,
+			#Fill-39,
+			#Fill-41,
+			#Fill-43,
+			#fill-my
+				fill: #FFC000
+
+
+.datepicker.active
+	z-index: 1500
+
+.radio
+	position: relative
+	display: inline-block
+	color: #669
+	padding-left: 40px
+	margin-right: 40px
+	cursor: pointer
+	input
+		position: absolute
+		left: 0
+		top: 4px
+		opacity: 0
+		z-index: 2
+		&:checked
+			+ p
+				font-weight: bold
+				&:after
+					content: ""
+					position: absolute
+					left: -32px
+					top: 3px
+					width: 16px
+					height: 16px
+					z-index: 12
+					background-color: #C4203D
+					-webkit-border-radius: 50%
+					border-radius: 50%
+	p
+		position: relative
+		display: inline-block
+		padding-left: 0px
+		line-height: 1.5
+		font-size: 18px
+		color: #35251E
+		+mr
+
+		&:before
+			content: ""
+			position: absolute
+			left: -40px
+			top: -5px
+			width: 32px
+			height: 32px
+			border: 1px solid #DADADA
+			z-index: 10
+
+.is-centered
+	text-align: center
 
 
 .tab
@@ -586,16 +998,22 @@ p
 	text-align: center
 	border-bottom: 3px solid #f4f4f4
 	margin-bottom: 40px
+	padding: 0
 	&__item
 		display: inline-block
 		vertical-align: top
 		position: relative
 		padding: 10px
+		margin: 0 10px
 		font-size: 40px
 		color: #35251E
 		text-transform: uppercase
+		cursor: pointer
 		+br
 		font-weight: bold
+		+tr(.4s)
+		&:hover
+			color: $yellow
 		&:after
 			content: none
 			position: absolute
@@ -612,6 +1030,18 @@ p
 		display: none
 		&.is-active
 			display: block
+		.tab
+			padding-bottom: 30px
+		.tab__item
+			font-size: 18px
+			color: #333333
+			+br
+			&:hover
+				color: $yellow
+			&.is-active
+				color: $red
+				&:after
+					content: none
 
 
 .happy
@@ -639,12 +1069,26 @@ p
 		+br
 		+trx(20px)
 		font-weight: bold
+		&_fill
+			background: url('../img/content/fill.png')
+			-webkit-background-clip: text
+			-webkit-text-fill-color: $n
+			text-transform: uppercase
+			animation: animate 20s linear infinite
+
 	&__pic
 		margin-top: 50px
 		margin-bottom: 80px
 		+trx(20px)
 	.btn
 		+trx(20px)
+
+@keyframes animate
+	0%
+		background-position: 0 0
+	100%
+		background-position: 0% 100%
+
 
 .wide-img
 	position: absolute
@@ -653,6 +1097,32 @@ p
 	transform: translate(-50%, -50%)
 	min-height: 100%
 	min-width: 100%
+	&_fixed
+		top: 0%
+		left: 0
+		background-repeat: no-repeat
+		background-attachment: fixed
+		-webkit-backface-visibility: hidden
+		backface-visibility: hidden
+		background-size: cover
+		transform: none
+		&:after
+			content: ''
+			+coverdiv
+			background-color: rgba(52, 36, 29, .9)
+			pointer-events: none
+			z-index: 5
+
+
+.wrap
+	&-row
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+	&-flex
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
 
 .centerdiv
 	position: relative
@@ -674,6 +1144,10 @@ p
 	width: 48%
 	+r(1020)
 		width: 100%
+.col-45
+	width: 45%
+	+r(768)
+		width: 100%
 
 .col-35
 	width: 35%
@@ -687,15 +1161,17 @@ p
 	margin-bottom: 50px
 .mod-mb30
 	margin-bottom: 30px
+.mod-mb20
+	margin-bottom: 20px
 .mod-mb0
 	margin-bottom: 0px
 
-[data-aos]
-	opacity: 0
-	&.aos-animate
-		opacity: 1
-[data-aos=slide-left]
-	transform: translate3d(10%,0,0)
+// [data-aos]
+// 	opacity: 0
+// 	&.aos-animate
+// 		opacity: 1
+// [data-aos=slide-left]
+// 	transform: translate3d(10%,0,0)
 
 .mod-wrap-mob
 	+r(650)
