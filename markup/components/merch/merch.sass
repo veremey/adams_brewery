@@ -67,11 +67,18 @@
 		font-weight: bold
 	&__price
 		display: block
-		font-size: 24px
+		font-size: 32px
 		color: #FFC500
 		line-height: 1.33
 		+br
 		font-weight: bold
+		img
+			display: inline-block
+			vertical-align: bottom
+			padding-bottom: .2em
+			margin-right: 2px
+			height: 1em
+			line-height: 1
 	&__text
 		padding: 80px 0 60px
 		margin-bottom: 60px
@@ -85,7 +92,7 @@
 	&__info
 		width: 100%
 		&_row
-			margin-bottom: 20px
+			margin-bottom: 24px
 		&_col
 			display: inline-block
 			vertical-align: top
@@ -104,3 +111,58 @@
 			font-size: 16px
 			color: #838383
 			+mr
+
+
+.counter
+	display: flex
+	align-items: center
+	width: 100%
+	margin-top: 60px
+	&__btn
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-right: 30px
+		width: 116px
+		height: 69px
+		border: 1px solid #E0E0E0
+		color: #E0E0E0
+		border-radius: 64px
+	&__item
+		display: inline-block
+		vertical-align: top
+		font-size: 30px
+		width: 30px
+		line-height: 69px
+		text-align: center
+		color: #E0E0E0
+		+tr(.4s)
+		&:hover
+			color: #000
+		&:active
+			font-size: 26px
+			+tr(0s)
+		&_minus
+			padding-bottom: 4px
+		&_plus
+			padding-top: 4px
+	&__label
+		display: inline-block
+		vertical-align: top
+		width: 60px
+		padding: 0
+		margin: 0
+	&__input
+		display: block
+		width: 100%
+		padding: 0 0 2px 0
+		margin: 0
+		border: none
+		text-align: center
+		font-size: 40px
+		line-height: 69px
+		color: #000
+		background-color: $n
+		text-transform: uppercase
+		+mr
+

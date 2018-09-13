@@ -37,10 +37,22 @@
 						<div class="merch__content merch__content_wide ">
 
 							<h2 class="merch__title" role="heading" aria-level="2">Adam's T-Shirt</h2>
-							<p class="merch__price  price">&#36;19</p>
+							<p class="merch__price  price"><img src="static/img/content/dollar.svg" aria-hidden="true" alt="">19</p>
 
 							<div class="merch__text">
 								<p class="merch__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries… </p>
+								<div class="merch__count">
+									<div class="counter">
+										<div class="counter__btn">
+											<button class="counter__item counter__item_minus" onclick="minus()"> - </button>
+											<label class="counter__label" for="counter">
+												<input type="text" class="counter__input" name="counter" id="counter" value="1">
+											</label>
+											<button class="counter__item  counter__item_plus" onclick="plus()"> + </button>
+										</div>
+										<button class="btn">Add to cart</button>
+									</div>
+								</div>
 							</div>
 							<div class="merch__info">
 								<div class="merch__info_row">
@@ -109,6 +121,11 @@
 			<!-- end follow -->
 
 			{{> footer/footer}}
+
+
+			<div class='scrolltop'>
+				<img src="static/img/content/arrow-top.svg" alt="scroll top" class='scrolltop__icon'>
+			</div>
 
 		</div>
 

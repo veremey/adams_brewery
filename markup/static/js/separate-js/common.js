@@ -1,4 +1,22 @@
 
+// counter
+if($('.counter').length){
+	var countEl = document.getElementById("counter");
+	var count = countEl.value;
+	function plus(){
+		var count = countEl.value;
+		count++;
+		countEl.value = count;
+	}
+	function minus(){
+		var count = countEl.value;
+		if (count > 1) {
+			count--;
+			countEl.value = count;
+		}
+	}
+}
+
 $(document).ready(function () {
 
 	$('.tooltip').mouseenter(function () {
@@ -15,6 +33,49 @@ $(document).ready(function () {
 		})
 	}
 
+	/* search menu */
+
+	$('.search__icon').on('click', function () {
+		$(this).parent('.search').addClass('is-active').find('.search__input').focus();
+	});
+	/*- --- -*/
+
+	/*- doc click -*/
+	$(document).on('click touchstart ', function(e) {
+
+		var $menu = $('.search');
+		console.log(e.target);
+
+		if (!$menu.is(e.target) && $menu.has(e.target).length === 0 ) {
+
+			var item = e.target;
+			$menu.removeClass('is-active');
+		}
+
+	});
+
+	/*- --- -*/
+
+
+	//  scrollTop
+	var bottomOf = $(document).height() - $('.page__footer').height();
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 50 ) {
+			$('.scrolltop:hidden').stop(true, true).fadeIn();
+		} else {
+			$('.scrolltop').stop(true, true).fadeOut();
+		}
+	});
+
+	$(".scrolltop").click(function(){
+		$("html,body").animate({
+			scrollTop:$(".header").offset().top},"1000");
+		return false;
+	});
+	 /*----*/
+
+
+
 	if($('#years').length) {
 		(function () {
 			setTimeout(function() {
@@ -29,6 +90,7 @@ $(document).ready(function () {
 
 	$('.js-accordion').click(function () {
 		$(this).toggleClass('is-hidden');
+		AOS.refresh();
 	});
 
 

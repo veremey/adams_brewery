@@ -55,6 +55,8 @@ function GlobalClass() {
 				$( '[data-tab*="'+ openItem[i]+'"] ').addClass('is-active');
 				// $( '[data-tab*="'+ openItem +'"] ')
 			}
+
+			AOS.refresh();
 			// open.addClass('is-active');
 
 		});

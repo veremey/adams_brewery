@@ -61,12 +61,6 @@ b, strong
 p
 	margin: 0
 
-.red
-	color: #fff
-	font-size: 18px
-	background-color: #000
-	&__text
-		display: none
 
 .page
 	&__wrapper
@@ -90,7 +84,6 @@ p
 			text-align: center
 	&.is-fixed
 		overflow: hidden
-
 
 .section
 	margin-bottom: 65px
@@ -133,6 +126,8 @@ p
 		text-align: center
 		.page__layout
 			z-index: 10
+		.title__xs
+			margin-bottom: 1.2em
 	&__toper
 		margin-bottom: 40px
 		.title__ms
@@ -353,6 +348,33 @@ p
 	&:hover
 		background-color: #922437
 
+.scrolltop
+	display: none
+	width: 64px
+	height: 64px
+	margin: 0 auto
+	position: fixed
+	bottom: 20px
+	left: 50%
+	margin-left: 650px
+	background-color: $yellow
+	cursor: pointer
+	border-radius: 100%
+	+tr(.6s)
+	+r(1460)
+		width: 36px
+		height: 36px
+		left: auto
+		margin-left: 0
+		right: 10px
+	&:hover
+		background-color: #838b75
+	&__icon
+		+vcenter
+		color: #fff
+		font-size: 20px
+
+
 .carte
 	display: none
 	margin-bottom: 20px
@@ -474,8 +496,6 @@ p
 		top: 20px
 		right: 20px
 		z-index: 2
-
-
 
 .social
 	display: inline-block
@@ -760,9 +780,9 @@ p
 		position: absolute
 		top: 50%
 		left: 50%
-		bottom: 20px
-		width: 96%
-		max-width: 840px
+		// bottom: 20px
+		width: 840px
+		max-width: 96%
 		// height: 100%
 		max-height: 92vh
 		transform: translate(-50%, -50%)
@@ -871,13 +891,16 @@ p
 	height: 100%
 
 #years
-	height: 576px
+	height: auto
 	width: 628px
 	border: 2px solid $yellow
+	overflow: default
 	.title__pp
 		text-transform: uppercase
 		margin-bottom: 10px
 		margin-top: 40px
+		+r(768)
+			font-size: 14.2vw
 	.btn
 		width: 320px
 		max-width: 90%
@@ -994,10 +1017,11 @@ p
 .tab
 	display: block
 	width: calc(100% + 40px )
-	margin-left: -20px
+	// margin-left: -20px
 	text-align: center
 	border-bottom: 3px solid #f4f4f4
-	margin-bottom: 40px
+	// margin-bottom: 40px
+	margin: 0 30px 40px -20px
 	padding: 0
 	&__item
 		display: inline-block
@@ -1031,17 +1055,47 @@ p
 		&.is-active
 			display: block
 		.tab
-			padding-bottom: 30px
+			padding-bottom: 20px
 		.tab__item
 			font-size: 18px
 			color: #333333
+			text-transform: none
 			+br
+			font-weight: normal
 			&:hover
 				color: $yellow
 			&.is-active
 				color: $red
+				font-weight: bold
 				&:after
 					content: none
+
+.search
+	display: flex
+	height: 40px
+	width: 38px
+	overflow: hidden
+	+try(-6px)
+	+tr(.4s)
+	&.is-active
+		width: 200px
+		.search__icon
+			transform: rotateY(-90deg)
+		.search__label
+			transform: translateY(6px)
+	&__icon
+		+tr(.4s)
+	&__label
+		transform-origin: 0 50%
+		transform: translateY(8px)
+	&__input
+		padding: 0
+		margin: 0
+		// border: none
+		width: 100%
+		padding: 4px 6px
+		color: #000
+
 
 
 .happy
@@ -1089,7 +1143,6 @@ p
 	100%
 		background-position: 0% 100%
 
-
 .wide-img
 	position: absolute
 	top: 50%
@@ -1113,7 +1166,6 @@ p
 			pointer-events: none
 			z-index: 5
 
-
 .wrap
 	&-row
 		display: flex
@@ -1123,6 +1175,9 @@ p
 		display: flex
 		justify-content: space-between
 		flex-wrap: wrap
+
+.mod-nowrap
+	flex-wrap: nowrap
 
 .centerdiv
 	position: relative
