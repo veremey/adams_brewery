@@ -411,7 +411,9 @@ p
 			font-weight: normal
 			margin-right: 20px
 		&_header
+			position: relative
 			display: flex
+			align-items: center
 	&__list
 		margin: 0
 		padding: 0 0 0 20px
@@ -440,18 +442,28 @@ p
 	position: relative
 	display: inline-block
 	vertical-align: top
+	padding-bottom: 10px
+	margin-right: 20px
+	cursor: pointer
 	&:hover
+		.tooltip__icon_item
+			fill: $red
+		.tooltip__content
+			display: block!important
+	&.is-active
+		.tooltip__icon_item
+			fill: $red
 		.tooltip__content
 			display: block!important
 	&__icon
 		display: inline-block
 		vertical-align: top
-		margin-right: 20px
 	&__content
 		position: absolute
-		top: calc(100% + 0px)
+		top: calc(100% + 10px)
 		left: 40%
 		width: 760px
+		max-width: 80vw
 		background-color: #fff
 		padding: 20px 20px 40px
 		+trx(-40%)
@@ -464,11 +476,11 @@ p
 			position: absolute
 			top: -11px
 			left: 40%
-			margin-left: -11px
 			+arr(20, 11, #fff, t)
-			filter: drop-shadow(0 0 8px rgba(0, 0, 0, .6))
-			z-index: 10
+			filter: drop-shadow(0 0 0px rgba(0, 0, 0, .6))
+			z-index: 0
 			+trx(-40%)
+
 		&_text
 			width: 320px
 
@@ -496,6 +508,13 @@ p
 		top: 20px
 		right: 20px
 		z-index: 2
+	&-hidden
+		// display: none
+
+.tipso_content
+	padding: 0
+	.tipso_arrow
+		filter: drop-shadow(0 0 0px rgba(0, 0, 0, .6))
 
 .social
 	display: inline-block
@@ -1017,10 +1036,8 @@ p
 .tab
 	display: block
 	width: calc(100% + 40px )
-	// margin-left: -20px
 	text-align: center
 	border-bottom: 3px solid #f4f4f4
-	// margin-bottom: 40px
 	margin: 0 30px 40px -20px
 	padding: 0
 	&__item
@@ -1069,6 +1086,9 @@ p
 				font-weight: bold
 				&:after
 					content: none
+	&.mod-nowrap
+		+r(900)
+			flex-wrap: wrap
 
 .search
 	display: flex
@@ -1079,8 +1099,11 @@ p
 	+tr(.4s)
 	&.is-active
 		width: 200px
+		+r(1050)
+			width: 140px
 		.search__icon
 			transform: rotateY(-90deg)
+			width: 0
 		.search__label
 			transform: translateY(6px)
 	&__icon
@@ -1095,8 +1118,6 @@ p
 		width: 100%
 		padding: 4px 6px
 		color: #000
-
-
 
 .happy
 	&__content

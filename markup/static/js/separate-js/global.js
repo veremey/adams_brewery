@@ -86,6 +86,9 @@ function GlobalClass() {
 	};
 
 
+	/*- tooltip  -*/
+
+
 	/*- picture slider  -*/
 
 	this.pictureSlider = function (opt) {

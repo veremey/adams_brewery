@@ -19,9 +19,8 @@ if($('.counter').length){
 
 $(document).ready(function () {
 
-	$('.tooltip').mouseenter(function () {
-		$(this).find('.tooltip__slider').slick('reinit');
-	});
+
+
 
 	if($('.cocoen').length){
 		$('.cocoen').cocoen();
@@ -43,11 +42,8 @@ $(document).ready(function () {
 	/*- doc click -*/
 	$(document).on('click touchstart ', function(e) {
 
-		var $menu = $('.search');
-		console.log(e.target);
-
+		var $menu = $('.search, .tooltip');
 		if (!$menu.is(e.target) && $menu.has(e.target).length === 0 ) {
-
 			var item = e.target;
 			$menu.removeClass('is-active');
 		}
@@ -136,6 +132,49 @@ $(document).ready(function () {
 	Global.simpleSlider({
 		slider: '.tooltip__slider'
 	});
+
+
+
+	/*-- tooltip custom css--*/
+	$('.tooltip').mouseover(function () {
+		if($(document).width() < 768){
+			$(this).css({'position' : 'static'});
+		}
+		// $(this).find('.tooltip__slider').slick('reInit');
+		$(this).find('.tooltip__slider').slick('setPosition');
+	});
+
+	if($(document).width() < 768){
+		$('.tooltip').on('click touchstart', function () {
+			$('.tooltip').removeClass('is-active');
+			$(this).addClass('is-active');
+			$(this).find('.tooltip__slider').slick('setPosition');
+		});
+	}
+
+
+	/*- tooltips whith plugin -*/
+
+	// if($('.tooltip').length) {
+	// 	$('.tooltip').tipso({
+	// 		position: 'bottom',
+	// 		tooltipHover: true,
+	// 		background: '#ffffff',
+	// 		width: '500px',
+	// 		maxWidth: function () {
+	// 			var maxWidth = $(document).width() - 60 + 'px';
+	// 			return maxWidth;
+	// 		},
+	// 		content: function () {
+	// 			return $('#demo-html-content').html();
+	// 		},
+	// 		onShow: function(){
+	// 			$('.tooltip__slider').slick('reInit');
+	// 		}
+	// 	});
+
+	// }
+
 
 	Global.pictureSlider({
 		slider: '.picture-slider'
