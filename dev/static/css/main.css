@@ -2096,10 +2096,6 @@ p {
   color: #000;
 }
 
-.ppp__inp:-ms-input-placeholder {
-  color: #000;
-}
-
 .ppp__inp::-ms-input-placeholder {
   color: #000;
 }
@@ -4112,6 +4108,22 @@ p {
   font-family: 'merriweather-regular', Arial, sans-serif;
 }
 
+.share {
+  display: block;
+}
+
+.share__icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 14px;
+  width: 20px;
+}
+
+.share__icon:hover .share__icon_item,
+.share__icon:hover #Rectangle-12 {
+  fill: #C4203D !important;
+}
+
 .simple-slider__item {
   text-align: center;
 }
@@ -4176,22 +4188,6 @@ p {
   .simple-slider .btn {
     margin-top: 30px;
   }
-}
-
-.share {
-  display: block;
-}
-
-.share__icon {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 14px;
-  width: 20px;
-}
-
-.share__icon:hover .share__icon_item,
-.share__icon:hover #Rectangle-12 {
-  fill: #C4203D !important;
 }
 
 /*# sourceMappingURL=main.css.map */

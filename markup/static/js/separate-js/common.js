@@ -188,7 +188,7 @@ $(document).ready(function () {
 		offset: 25
 	});
 
-	$('.menu__btn').click(function () {
+	$(document).on('click','.menu__btn', function () {
 		$(this).toggleClass('is-active');
 		$('.nav, .header__wrap, .page__wrapper').toggleClass('is-active');
 	});
